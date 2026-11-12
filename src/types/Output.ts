@@ -30,6 +30,10 @@ export interface Output {
     webrtcData?: { url?: string; token?: string; streaming?: boolean; startedAt?: number; fps?: string | number; bitrate?: string | number }
     rtmp?: boolean
     rtmpData?: RtmpData
+    /** Publish a resolved Flywire scene for this output in addition to Electron rendering. */
+    scrim?: boolean
+    /** Suppress this output's physical Electron window while retaining Flywire's text measurement host. */
+    scrimOnly?: boolean
     forcedResolution?: Resolution
     invisible?: boolean
     taskbar?: boolean
@@ -67,6 +71,10 @@ export interface RtmpStatus {
      * destination that keeps dropping and reconnecting reads as healthy from `state` alone.
      */
     [destinationId: string]: { state: RtmpDestinationState; error?: string; restarts?: number; lastIssue?: string }
+}
+
+export function usesScrimOnlyRenderer(output: Pick<Output, "scrim" | "scrimOnly" | "stageOutput"> | null | undefined) {
+    return !!output?.scrim && !!output?.scrimOnly && !output?.stageOutput
 }
 
 export interface OutData {

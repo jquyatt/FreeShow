@@ -82,6 +82,7 @@
                 } else if (key === "alwaysOnTop") {
                     send(OUTPUT, ["SET_VALUE"], { id: outputId, key, value })
                 }
+                if (key === "scrimOnly") send(OUTPUT, ["SET_RENDER_MODE"], { id: outputId, ...out, presenting: $outputDisplay })
             }
 
             return a
@@ -92,6 +93,11 @@
             send(OUTPUT, ["CREATE"], { ...out, id: outputId })
             AudioAnalyser.recorderActivate()
         }
+    }
+
+    function updateScrimEnabled(value: boolean) {
+        if (!value && currentOutput?.scrimOnly) updateOutput("scrimOnly", false)
+        updateOutput("scrim", value)
     }
 
     function _toggleOutput(state: boolean) {
@@ -375,6 +381,13 @@
             <MaterialButton title="titlebar.edit" icon="edit" on:click={editStyle} />
         {/if}
     </InputRow>
+
+    <Title label="Scrim (prototype)" icon="screen" />
+    <MaterialToggleSwitch label="Publish this output over Flywire" checked={currentOutput?.scrim === true} defaultValue={false} on:change={(e) => updateScrimEnabled(e.detail)} />
+    <MaterialToggleSwitch label="Use Scrim instead of the Electron output window" checked={currentOutput?.scrimOnly === true} defaultValue={false} disabled={currentOutput?.scrim !== true} on:change={(e) => updateOutput("scrimOnly", e.detail)} />
+    {#if currentOutput?.scrimOnly}
+        <p class="scrimOnlyNote">The physical Chromium output window is disabled. Scrim remains muted; use this mode only when Electron program audio is not required.</p>
+    {/if}
 {/if}
 
 <!-- WIP toggle fullscreen (Mac) ?? Only working one time for some reason -->

@@ -2,7 +2,7 @@ import { get } from "svelte/store"
 import { uid } from "uid"
 import { OUTPUT } from "../../../types/Channels"
 import { Main } from "../../../types/IPC/Main"
-import type { Output, Outputs, RtmpDestination } from "../../../types/Output"
+import { usesScrimOnlyRenderer, type Output, type Outputs, type RtmpDestination } from "../../../types/Output"
 import type { Resolution, Styles } from "../../../types/Settings"
 import type { Item, Layout, LayoutRef, Media, OutSlide, Show, Slide, SlideData, Template, TemplateSettings, Transition } from "../../../types/Show"
 import { AudioAnalyser } from "../../audio/audioAnalyser"
@@ -116,7 +116,7 @@ export function toggleOutputs(outputIds: string[] | null = null, options: { forc
     else outputIds = resolveOutputIds(outputIds)
     // if (outputIds === null) outputIds = Object.keys(get(outputs))
 
-    const outputsList = outputIds.map((id) => ({ ...get(outputs)[id], id })).filter((a) => a.enabled)
+    const outputsList = outputIds.map((id) => ({ ...get(outputs)[id], id })).filter((output) => output.enabled && !usesScrimOnlyRenderer(output))
     if (!outputsList.length) return
 
     // sort so display order can be changed! (needs app restart)

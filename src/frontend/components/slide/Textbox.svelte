@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { createEventDispatcher, onDestroy, onMount, tick } from "svelte"
+    import { afterUpdate, createEventDispatcher, onDestroy, onMount, tick } from "svelte"
     import { OUTPUT } from "../../../types/Channels"
     import type { Styles } from "../../../types/Settings"
     import type { Item, Slide, TemplateStyleOverride, Transition } from "../../../types/Show"
@@ -14,6 +14,7 @@
     import { isCroppedItem } from "../helpers/cropping"
     import { getStyles, getItemStyle } from "../helpers/style"
     import SlideItemTransition from "../output/transitions/SlideItemTransition.svelte"
+    import { captureChromiumTextLayout, chromiumTextLayoutRevisionKey, chromiumTextLayoutSourceKey, clearChromiumTextLayouts } from "../output/scrim/chromiumTextLayout"
     import SlideItems from "./SlideItems.svelte"
     import TextboxLines from "./TextboxLines.svelte"
     import { readAutoSizeCache, writeAutoSizeCache } from "./autosizeCache"
@@ -23,6 +24,7 @@
     export let slideIndex = 0
     export let preview = false
     export let miniPreview = false
+    export let fontPreview = false
     export let isTemplatePreview = false
     export let mirror = true
     export let isOutputted = false
@@ -120,11 +122,16 @@
                 loaded = true
             }, 100)
         }
+        document.fonts.ready.then(scheduleChromiumLayoutCapture)
     })
     onDestroy(() => {
         if (dateInterval) clearInterval(dateInterval)
         if (debounceTimer) clearTimeout(debounceTimer)
         if (cssInterval) clearInterval(cssInterval)
+        cancelAnimationFrame(chromiumLayoutFrame)
+        // Keep the main-window copy available for an exact future scene key;
+        // style/content/resolution changes produce a different revision key.
+        clearChromiumTextLayouts(chromiumLayoutOwner, false)
     })
 
     // $: if (item.type === "timer") ref.id = item.timer!.id!
@@ -298,6 +305,43 @@
     // AUTO SIZE
 
     let itemElem: HTMLElement | undefined
+    const chromiumLayoutOwner = Symbol("chromium-text-layout")
+    let chromiumLayoutFrame = 0
+
+    function flywireItemId() {
+        return String(item?.id || (itemIndex >= 0 ? `text-${itemIndex}` : ""))
+    }
+
+    function scheduleChromiumLayoutCapture() {
+        if (!itemElem || !outputId || !$outputs[outputId]?.scrim || preview || fontPreview || isStage || ref?.type !== "show" || item?.scrolling?.type || chords || item?.list?.enabled || itemElem.closest(".autosize-precompute")) {
+            clearChromiumTextLayouts(chromiumLayoutOwner)
+            return
+        }
+        const textFit = item?.textFit || "shrinkToFit"
+        if (textFit !== "none" && !autoSizeReady) {
+            clearChromiumTextLayouts(chromiumLayoutOwner)
+            return
+        }
+        const itemId = flywireItemId()
+        if (!itemId) return
+        const resolution = $outputs[outputId]?.forcedResolution || $outputs[outputId]?.bounds || { width: 1920, height: 1080 }
+        const revisionKey = chromiumTextLayoutRevisionKey(item, outputStyle, resolution)
+        const sourceKey = chromiumTextLayoutSourceKey(
+            {
+                showId: ref?.showId,
+                layoutId: ref?.layoutId,
+                slideIndex,
+                slideId: ref?.slideId
+            },
+            revisionKey
+        )
+        cancelAnimationFrame(chromiumLayoutFrame)
+        chromiumLayoutFrame = requestAnimationFrame(() => {
+            if (itemElem?.isConnected) captureChromiumTextLayout(outputId, itemId, sourceKey, itemElem, chromiumLayoutOwner)
+        })
+    }
+
+    afterUpdate(scheduleChromiumLayoutCapture)
 
     const getItemTextFit = (target: any) => {
         const isText = (target?.type || "text") === "text"
@@ -572,12 +616,20 @@
         if (item?.list?.enabled) fontSize *= 0.9
 
         if (item.type === "slide_tracker") {
-            if (finalCacheKey) writeAutoSizeCache(finalCacheKey, { signature: finalCacheSignature, fontSize })
+            if (finalCacheKey)
+                writeAutoSizeCache(finalCacheKey, {
+                    signature: finalCacheSignature,
+                    fontSize
+                })
             markAutoSizeReady()
             return
         }
         if (fontSize !== item.autoFontSize) setItemAutoFontSize(fontSize)
-        if (!isDynamic && finalCacheKey) writeAutoSizeCache(finalCacheKey, { signature: finalCacheSignature, fontSize })
+        if (!isDynamic && finalCacheKey)
+            writeAutoSizeCache(finalCacheKey, {
+                signature: finalCacheSignature,
+                fontSize
+            })
 
         markAutoSizeReady()
     }

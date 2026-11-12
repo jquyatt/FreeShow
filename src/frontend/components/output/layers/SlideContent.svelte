@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onDestroy, onMount } from "svelte"
-    import type { Item, OutSlide, SlideData, TimelineAction } from "../../../../types/Show"
+    import type { Item, OutSlide, SlideData, TimelineAction, Transition } from "../../../../types/Show"
     import { scriptureSettings, showsCache, slideTimelineSpeedMultiplier, templates } from "../../../stores"
     import { waitUntilValueIsDefined } from "../../../utils/common"
     import { shouldItemBeShown } from "../../edit/scripts/itemHelpers"
@@ -26,6 +26,7 @@
     export let ratio: number
     export let mirror = false
     export let preview = false
+    export let measurementOnly = false
     export let transition: any = {}
     export let transitionEnabled = false
     export let styleIdOverride = ""
@@ -53,10 +54,10 @@
     let renderVersion = 0
 
     // Strip text content and computed autoFontSize so we can compare the item/box shell itself
-    function getItemBase(item: Item | undefined): Partial<Item> | null {
+    function getItemBase(item: Item | undefined): Item | null {
         if (!item) return null
         const { id: _id, lines: _lines, autoFontSize: _auto, ...base } = item
-        return base
+        return base as Item
     }
 
     function hasLinesContent(item: Item | undefined): boolean {
@@ -67,6 +68,11 @@
     function itemBoxesAreEqual(oldItem: Item | undefined, newItem: Item | undefined): boolean {
         if (!oldItem || !newItem) return false
         return JSON.stringify(getItemBase(oldItem)) === JSON.stringify(getItemBase(newItem))
+    }
+    let persistentItemIndexes: number[] = []
+    function hasRealTransition(itemTransition: Transition | undefined, globalTransition: Transition | undefined) {
+        const activeTransition = itemTransition || globalTransition
+        return !!activeTransition && activeTransition.type !== "none" && !!activeTransition.duration
     }
     // maintain a hidden workload that primes autosize results ahead of the visible reveal
     let precomputeTargets: { item: Item; index: number; key: string }[] = []
@@ -241,6 +247,7 @@
         if (!isDifferentSlide && !forceRemount) {
             if (timeout) clearTimeout(timeout)
             updateGeneration++
+            persistentItemIndexes = []
             setCurrentState()
             show = true
             transitioningBetween = false
@@ -262,6 +269,11 @@
 
         let currentTransition = transition.between || transition.in || transition
         if (currentTransition?.type === "none") currentTransition.duration = 0
+
+        const slideHasAnyTransition = currentSlide.items.some((item: Item) => hasRealTransition(item.actions?.transition, currentTransition))
+        persistentItemIndexes = slideHasAnyTransition
+            ? []
+            : currentSlide.items.flatMap((newItem: Item, index: number) => (JSON.stringify(currentItems[index]) === JSON.stringify(newItem) ? [index] : []))
 
         let currentTransitionDuration = transitionEnabled ? (itemTransitionDuration ?? currentTransition?.duration ?? 0) : 0
         let waitToShow = currentTransitionDuration * ((currentTransition?.fadeInOffset ?? 50) / 100)
@@ -373,6 +385,7 @@
         setTimeout(() => (isReady = true))
     }
     onMount(() => {
+        if (measurementOnly) return
         const interval = setInterval(() => {
             if (isClearing || !isReady || !timelineActions.length) return
             // WIP use actual slide timeline pos when available?
@@ -448,15 +461,16 @@
 
 <!-- Render all items in original order to maintain z-index layering -->
 {#each currentItems as item, index}
-    {#if item && shouldItemBeShown(item, [], showItemRef, conditionsUpdater) && (!item.clickReveal || current.outSlide?.itemClickReveal)}
+    {#if item && (!measurementOnly || (item.type || "text") === "text") && shouldItemBeShown(item, [], showItemRef, conditionsUpdater) && (!item.clickReveal || current.outSlide?.itemClickReveal)}
         {@const currentTransition = transition.between || transition.in || transition}
-        {#if !transitionEnabled || currentTransition?.type === "none" || currentTransition?.duration === 0}
+        {#if persistentItemIndexes.includes(index) || !transitionEnabled || currentTransition?.type === "none" || currentTransition?.duration === 0}
             <!-- No transition enabled: render directly without transition wrapper -->
             <Textbox
                 backdropFilter={current.slideData?.["backdrop-filter"] || ""}
                 chords={item.chords?.enabled}
                 animationStyle={animationData.style || {}}
                 item={timelineItems.get(`${current.outSlide?.id}-${current.outSlide?.layout}-${current.outSlide?.index}`)?.[index] || item}
+                itemIndex={index}
                 transition={null}
                 {ratio}
                 {outputId}
@@ -470,7 +484,6 @@
                 slideIndex={current.outSlide?.index}
                 {styleIdOverride}
                 autoSizeKey={createAutoSizeKey(item, index)}
-                itemIndex={index}
                 updateDynamicValues={!isClearing}
             />
         {:else}
@@ -485,6 +498,7 @@
                             chords={item.chords?.enabled}
                             animationStyle={animationData.style || {}}
                             item={timelineItems.get(`${current.outSlide?.id}-${current.outSlide?.layout}-${current.outSlide?.index}`)?.[index] || item}
+                            itemIndex={index}
                             transition={boxTransition}
                             textTransition={show || !boxChanged
                                 ? {
@@ -511,7 +525,6 @@
                             slideIndex={current.outSlide?.index}
                             {styleIdOverride}
                             autoSizeKey={createAutoSizeKey(item, index)}
-                            itemIndex={index}
                             updateDynamicValues={!isClearing}
                         />
                     </SlideItemTransition>

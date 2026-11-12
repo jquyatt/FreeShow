@@ -351,7 +351,7 @@ export interface MainReturnPayloads {
     [Main.DELETE_SHOWS_NI]: { deleted: string[] } | undefined
     [Main.GET_EMPTY_SHOWS]: Promise<{ id: string; name: string }[] | undefined>
     [Main.FULL_SHOWS_LIST]: string[]
-    [Main.GET_SCREENS]: Promise<{ name: string; id: string }[]>
+    [Main.GET_SCREENS]: Promise<{ name: string; id: string; displayId?: string }[]>
     [Main.GET_GRAPHICS_DEVICES]: Promise<{ value: string; label: string }[]>
     [Main.GET_WINDOWS]: Promise<{ name: string; id: string }[]>
     [Main.DOES_MEDIA_EXIST]: Promise<{ path: string; exists: boolean; creationTime?: number }>

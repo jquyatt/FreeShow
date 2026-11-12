@@ -1,0 +1,3176 @@
+{
+    "chromiumDevicePixelRatio": 2,
+    "chromiumUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.251 Electron/37.10.3 Safari/537.36",
+    "coordinateModel": {
+        "backingScaleUsedForLayout": false,
+        "bitmapScale": 1,
+        "note": "Scrim lays out into a 1920x1080 bitmap CGContext. One Core Graphics user-space unit maps to one scene pixel; the output view backing scale is applied only when the completed image is displayed.",
+        "sceneUnit": "pixel"
+    },
+    "fixtures": [
+        {
+            "baselineSteps": [],
+            "comparison": {
+                "chromiumLineBoxHeight": 127.8359375,
+                "chromiumLines": ["Grace and peace"],
+                "coreTextLines": ["Grace and peace"],
+                "coreTextSuggestedHeight": 128,
+                "fontFaceMatches": true,
+                "heightDelta": 0.1640625,
+                "lineBreaksMatch": true,
+                "maximumUnwrappedWidthDelta": 0.02293749999978445,
+                "modeledCSSLineBoxHeight": 127.84062500000002
+            },
+            "container": {
+                "height": 220,
+                "width": 1400
+            },
+            "cssLineHeight": 127.84062500000002,
+            "font": {
+                "ascent": 110.63976764678955,
+                "capHeight": 82.9801875,
+                "descent": 24.754295825958252,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue",
+                "leading": 3.254110813140869,
+                "normalizedWeightTrait": 0,
+                "postScriptName": "HelveticaNeue",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 400,
+                "size": 116.21875,
+                "styleName": "Regular",
+                "symbolicTraits": 2147483648,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 60.08509375
+            },
+            "id": "single-line-regular",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 150,
+                "kernZeroLineCount": 1,
+                "kernZeroLines": ["Grace and peace"],
+                "kernZeroSuggestedHeight": 128,
+                "lineHeightMultipleSuggestedHeight": 150
+            },
+            "lines": [
+                {
+                    "ascent": 107,
+                    "baselineX": 253.3713437500001,
+                    "baselineY": 113,
+                    "descent": 20.840625000000017,
+                    "leading": 3.254110813140869,
+                    "rangeLength": 15,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 88.21003125,
+                                    "glyphID": 46,
+                                    "glyphName": "G",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 88.21003125,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 126.910875,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 74,
+                                    "glyphName": "c",
+                                    "positionX": 189.32034375,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 251.7298125,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 314.13928125,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 346.44809375,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.617625,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 408.8575625,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 473.47518749999995,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 542.3929062499999,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 87,
+                                    "glyphName": "p",
+                                    "positionX": 574.7017187499999,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 643.6194374999999,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 706.0289062499999,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 74,
+                                    "glyphName": "c",
+                                    "positionX": 768.4383749999998,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 830.8478437499998,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 15,
+                            "rangeLocation": 0,
+                            "text": "Grace and peace",
+                            "width": 893.2573124999998
+                        }
+                    ],
+                    "text": "Grace and peace",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 893.2573124999998,
+                    "usedWidth": 893.2573124999998,
+                    "visualText": "Grace and peace",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 5,
+                            "rangeLocation": 0,
+                            "text": "Grace",
+                            "width": 314.13928125
+                        },
+                        {
+                            "offsetX": 346.44809375,
+                            "rangeLength": 3,
+                            "rangeLocation": 6,
+                            "text": "and",
+                            "width": 195.9448124999999
+                        },
+                        {
+                            "offsetX": 574.7017187499999,
+                            "rangeLength": 5,
+                            "rangeLocation": 10,
+                            "text": "peace",
+                            "width": 318.55559374999984
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-3.0",
+                "maximumLineHeight": "127.84062500000002",
+                "minimumLineHeight": "127.84062500000002",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": 0.02293749999978445,
+                    "chromiumKerningAuto": 893.234375,
+                    "chromiumKerningDisabled": 893.234375,
+                    "coreTextKerningAuto": 893.2573124999998,
+                    "coreTextLegacyKernZero": 893.2573124999998,
+                    "text": "Grace and peace"
+                }
+            ],
+            "purpose": "Single visual line at a fixed size",
+            "resolvedFontSize": 116.21875,
+            "suggestedSize": {
+                "height": 128,
+                "width": 893.2573124999998
+            }
+        },
+        {
+            "baselineSteps": [105.60000000000002],
+            "comparison": {
+                "chromiumLineBoxHeight": 211.1875,
+                "chromiumLines": ["Amazing grace", "How sweet the sound"],
+                "coreTextLines": ["Amazing grace", "How sweet the sound"],
+                "coreTextSuggestedHeight": 212,
+                "fontFaceMatches": true,
+                "heightDelta": 0.8125,
+                "lineBreaksMatch": true,
+                "maximumUnwrappedWidthDelta": 0.0014999999999645297,
+                "modeledCSSLineBoxHeight": 211.20000000000002
+            },
+            "container": {
+                "height": 360,
+                "width": 1400
+            },
+            "cssLineHeight": 105.60000000000001,
+            "font": {
+                "ascent": 91.3916015625,
+                "capHeight": 68.544,
+                "descent": 20.44775390625,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue",
+                "leading": 2.68798828125,
+                "normalizedWeightTrait": 0,
+                "postScriptName": "HelveticaNeue",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 400,
+                "size": 96,
+                "styleName": "Regular",
+                "symbolicTraits": 2147483648,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 49.632
+            },
+            "id": "manual-break-regular",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 248,
+                "kernZeroLineCount": 2,
+                "kernZeroLines": ["Amazing grace", "How sweet the sound"],
+                "kernZeroSuggestedHeight": 212,
+                "lineHeightMultipleSuggestedHeight": 248
+            },
+            "lines": [
+                {
+                    "ascent": 88,
+                    "baselineX": 380.03200000000004,
+                    "baselineY": 272,
+                    "descent": 17.60000000000001,
+                    "leading": 2.68798828125,
+                    "rangeLength": 14,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.208,
+                                    "glyphID": 40,
+                                    "glyphName": "A",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 81.888,
+                                    "glyphID": 84,
+                                    "glyphName": "m",
+                                    "positionX": 62.208,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 144.096,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 46.08,
+                                    "glyphID": 97,
+                                    "glyphName": "z",
+                                    "positionX": 195.648,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 21.312,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 241.728,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 53.376,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 263.04,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 55.104,
+                                    "glyphID": 78,
+                                    "glyphName": "g",
+                                    "positionX": 316.416,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 26.688,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 371.52,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 55.104,
+                                    "glyphID": 78,
+                                    "glyphName": "g",
+                                    "positionX": 398.20799999999997,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 31.968,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 453.31199999999995,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 485.28,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 74,
+                                    "glyphName": "c",
+                                    "positionX": 536.832,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 588.384,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 0,
+                                    "glyphID": 2,
+                                    "glyphName": "uni000A",
+                                    "positionX": 639.936,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 14,
+                            "rangeLocation": 0,
+                            "text": "Amazing grace\\n",
+                            "width": 639.9359999999999
+                        }
+                    ],
+                    "text": "Amazing grace\\n",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 639.9359999999999,
+                    "usedWidth": 639.9359999999999,
+                    "visualText": "Amazing grace",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 7,
+                            "rangeLocation": 0,
+                            "text": "Amazing",
+                            "width": 371.52
+                        },
+                        {
+                            "offsetX": 398.20799999999997,
+                            "rangeLength": 5,
+                            "rangeLocation": 8,
+                            "text": "grace",
+                            "width": 241.72800000000007
+                        }
+                    ]
+                },
+                {
+                    "ascent": 88,
+                    "baselineX": 233.344,
+                    "baselineY": 166.39999999999998,
+                    "descent": 17.60000000000001,
+                    "leading": 2.68798828125,
+                    "rangeLength": 19,
+                    "rangeLocation": 14,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 69.312,
+                                    "glyphID": 47,
+                                    "glyphName": "H",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 55.104,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 69.312,
+                                    "positionY": 0,
+                                    "stringIndex": 15
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 72.768,
+                                    "glyphID": 94,
+                                    "glyphName": "w",
+                                    "positionX": 124.416,
+                                    "positionY": 0,
+                                    "stringIndex": 16
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 26.688,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 197.184,
+                                    "positionY": 0,
+                                    "stringIndex": 17
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 223.87199999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 18
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 72.768,
+                                    "glyphID": 94,
+                                    "glyphName": "w",
+                                    "positionX": 271.87199999999996,
+                                    "positionY": 0,
+                                    "stringIndex": 19
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 344.64,
+                                    "positionY": 0,
+                                    "stringIndex": 20
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 396.192,
+                                    "positionY": 0,
+                                    "stringIndex": 21
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 30.240000000000002,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 447.744,
+                                    "positionY": 0,
+                                    "stringIndex": 22
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 26.688,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 477.98400000000004,
+                                    "positionY": 0,
+                                    "stringIndex": 23
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 30.240000000000002,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 504.672,
+                                    "positionY": 0,
+                                    "stringIndex": 24
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 53.376,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 534.912,
+                                    "positionY": 0,
+                                    "stringIndex": 25
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 51.552,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 588.288,
+                                    "positionY": 0,
+                                    "stringIndex": 26
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 26.688,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 639.84,
+                                    "positionY": 0,
+                                    "stringIndex": 27
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 666.528,
+                                    "positionY": 0,
+                                    "stringIndex": 28
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 55.104,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 714.528,
+                                    "positionY": 0,
+                                    "stringIndex": 29
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 53.376,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 769.6320000000001,
+                                    "positionY": 0,
+                                    "stringIndex": 30
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 53.376,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 823.008,
+                                    "positionY": 0,
+                                    "stringIndex": 31
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 56.928000000000004,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 876.384,
+                                    "positionY": 0,
+                                    "stringIndex": 32
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 19,
+                            "rangeLocation": 14,
+                            "text": "How sweet the sound",
+                            "width": 933.312
+                        }
+                    ],
+                    "text": "How sweet the sound",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 933.312,
+                    "usedWidth": 933.312,
+                    "visualText": "How sweet the sound",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 3,
+                            "rangeLocation": 14,
+                            "text": "How",
+                            "width": 197.184
+                        },
+                        {
+                            "offsetX": 223.87199999999999,
+                            "rangeLength": 5,
+                            "rangeLocation": 18,
+                            "text": "sweet",
+                            "width": 254.11200000000005
+                        },
+                        {
+                            "offsetX": 504.672,
+                            "rangeLength": 3,
+                            "rangeLocation": 24,
+                            "text": "the",
+                            "width": 135.168
+                        },
+                        {
+                            "offsetX": 666.528,
+                            "rangeLength": 5,
+                            "rangeLocation": 28,
+                            "text": "sound",
+                            "width": 266.784
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-3.0",
+                "maximumLineHeight": "105.60000000000001",
+                "minimumLineHeight": "105.60000000000001",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": -0.0014999999999645297,
+                    "chromiumKerningAuto": 639.9375,
+                    "chromiumKerningDisabled": 639.9375,
+                    "coreTextKerningAuto": 639.936,
+                    "coreTextLegacyKernZero": 639.936,
+                    "text": "Amazing grace"
+                },
+                {
+                    "autoWidthDelta": -0.0004999999999881766,
+                    "chromiumKerningAuto": 933.3125,
+                    "chromiumKerningDisabled": 933.3125,
+                    "coreTextKerningAuto": 933.312,
+                    "coreTextLegacyKernZero": 933.312,
+                    "text": "How sweet the sound"
+                }
+            ],
+            "purpose": "Two explicit FreeShow line blocks without automatic wrapping",
+            "resolvedFontSize": 96,
+            "suggestedSize": {
+                "height": 212,
+                "width": 933.312
+            }
+        },
+        {
+            "baselineSteps": [127.84062500000005, 127.84062500000002],
+            "comparison": {
+                "chromiumLineBoxHeight": 383.5078125,
+                "chromiumLines": ["Great is Your faithfulness", "Morning by morning", "new mercies I see"],
+                "coreTextLines": ["Great is Your faithfulness", "Morning by morning new", "mercies I see"],
+                "coreTextSuggestedHeight": 384,
+                "fontFaceMatches": true,
+                "heightDelta": 0.4921875,
+                "lineBreaksMatch": false,
+                "maximumUnwrappedWidthDelta": 0.06649999999990541,
+                "modeledCSSLineBoxHeight": 383.521875
+            },
+            "container": {
+                "height": 500,
+                "width": 1400
+            },
+            "cssLineHeight": 127.84062500000002,
+            "font": {
+                "ascent": 113.31399059295654,
+                "capHeight": 82.9801875,
+                "descent": 25.218915462493896,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue Bold",
+                "leading": 3.371152400970459,
+                "normalizedWeightTrait": 0.4,
+                "postScriptName": "HelveticaNeue-Bold",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 700,
+                "size": 116.21875,
+                "styleName": "Bold",
+                "symbolicTraits": 2147483650,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 60.08509375
+            },
+            "id": "shrink-near-wrap-bold",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 617,
+                "kernZeroLineCount": 4,
+                "kernZeroLines": ["Great is Your", "faithfulness", "Morning by morning new", "mercies I see"],
+                "kernZeroSuggestedHeight": 512,
+                "lineHeightMultipleSuggestedHeight": 462
+            },
+            "lines": [
+                {
+                    "ascent": 108,
+                    "baselineX": 5.999734375000116,
+                    "baselineY": 392,
+                    "descent": 19.840625000000017,
+                    "leading": 3.371152400970459,
+                    "rangeLength": 27,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 88.21003125,
+                                    "glyphID": 46,
+                                    "glyphName": "G",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 43.11715625,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 88.21003125,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 131.3271875,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 198.03675,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 40.909,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 264.74631250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 305.65531250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 337.964125,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 367.94856250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 430.35803125,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.61762499999999,
+                                    "glyphID": 64,
+                                    "glyphName": "Y",
+                                    "positionX": 462.66684375,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 527.28446875,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 598.294125,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.20909375,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 667.21184375,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 712.4209374999999,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 744.72975,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 783.43059375,
+                                    "positionY": 0,
+                                    "stringIndex": 15
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 850.14015625,
+                                    "positionY": 0,
+                                    "stringIndex": 16
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 40.909,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 880.12459375,
+                                    "positionY": 0,
+                                    "stringIndex": 17
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 921.03359375,
+                                    "positionY": 0,
+                                    "stringIndex": 18
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 989.9513125,
+                                    "positionY": 0,
+                                    "stringIndex": 19
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 1028.65215625,
+                                    "positionY": 0,
+                                    "stringIndex": 20
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 1097.569875,
+                                    "positionY": 0,
+                                    "stringIndex": 21
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 1127.5543125,
+                                    "positionY": 0,
+                                    "stringIndex": 22
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 1196.4720312499999,
+                                    "positionY": 0,
+                                    "stringIndex": 23
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1263.1815937499998,
+                                    "positionY": 0,
+                                    "stringIndex": 24
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1325.5910625,
+                                    "positionY": 0,
+                                    "stringIndex": 25
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 0,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 1388.00053125,
+                                    "positionY": 0,
+                                    "stringIndex": 26
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue-Bold",
+                            "rangeLength": 27,
+                            "rangeLocation": 0,
+                            "text": "Great is Your faithfulness\\n",
+                            "width": 1388.0005312499998
+                        }
+                    ],
+                    "text": "Great is Your faithfulness\\n",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 1388.0005312499998,
+                    "usedWidth": 1388.0005312499998,
+                    "visualText": "Great is Your faithfulness",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 5,
+                            "rangeLocation": 0,
+                            "text": "Great",
+                            "width": 305.65531250000004
+                        },
+                        {
+                            "offsetX": 337.964125,
+                            "rangeLength": 2,
+                            "rangeLocation": 6,
+                            "text": "is",
+                            "width": 92.39390624999999
+                        },
+                        {
+                            "offsetX": 462.66684375,
+                            "rangeLength": 4,
+                            "rangeLocation": 9,
+                            "text": "Your",
+                            "width": 249.75409374999992
+                        },
+                        {
+                            "offsetX": 744.72975,
+                            "rangeLength": 12,
+                            "rangeLocation": 14,
+                            "text": "faithfulness",
+                            "width": 643.27078125
+                        }
+                    ]
+                },
+                {
+                    "ascent": 108,
+                    "baselineX": 8.266000000000076,
+                    "baselineY": 264.15937499999995,
+                    "descent": 19.840625000000017,
+                    "leading": 3.371152400970459,
+                    "rangeLength": 23,
+                    "rangeLocation": 27,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 105.41040625,
+                                    "glyphID": 52,
+                                    "glyphName": "M",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 27
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 105.41040625,
+                                    "positionY": 0,
+                                    "stringIndex": 28
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.30103125,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 176.42006249999997,
+                                    "positionY": 0,
+                                    "stringIndex": 29
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 223.72109374999997,
+                                    "positionY": 0,
+                                    "stringIndex": 30
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 292.6388125,
+                                    "positionY": 0,
+                                    "stringIndex": 31
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 322.62325,
+                                    "positionY": 0,
+                                    "stringIndex": 32
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 78,
+                                    "glyphName": "g",
+                                    "positionX": 391.54096875,
+                                    "positionY": 0,
+                                    "stringIndex": 33
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 462.55062499999997,
+                                    "positionY": 0,
+                                    "stringIndex": 34
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 73,
+                                    "glyphName": "b",
+                                    "positionX": 494.85943749999996,
+                                    "positionY": 0,
+                                    "stringIndex": 35
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 60.317531249999995,
+                                    "glyphID": 96,
+                                    "glyphName": "y",
+                                    "positionX": 565.8690937499999,
+                                    "positionY": 0,
+                                    "stringIndex": 36
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 626.1866249999999,
+                                    "positionY": 0,
+                                    "stringIndex": 37
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 105.29418749999999,
+                                    "glyphID": 84,
+                                    "glyphName": "m",
+                                    "positionX": 658.4954375,
+                                    "positionY": 0,
+                                    "stringIndex": 38
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 763.789625,
+                                    "positionY": 0,
+                                    "stringIndex": 39
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.30103125,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 834.79928125,
+                                    "positionY": 0,
+                                    "stringIndex": 40
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 882.1003125000001,
+                                    "positionY": 0,
+                                    "stringIndex": 41
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 951.01803125,
+                                    "positionY": 0,
+                                    "stringIndex": 42
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 981.00246875,
+                                    "positionY": 0,
+                                    "stringIndex": 43
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 78,
+                                    "glyphName": "g",
+                                    "positionX": 1049.9201875,
+                                    "positionY": 0,
+                                    "stringIndex": 44
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 1120.9298437500001,
+                                    "positionY": 0,
+                                    "stringIndex": 45
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 1153.23865625,
+                                    "positionY": 0,
+                                    "stringIndex": 46
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 1222.156375,
+                                    "positionY": 0,
+                                    "stringIndex": 47
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 94.6020625,
+                                    "glyphID": 94,
+                                    "glyphName": "w",
+                                    "positionX": 1288.8659375,
+                                    "positionY": 0,
+                                    "stringIndex": 48
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 1383.468,
+                                    "positionY": 0,
+                                    "stringIndex": 49
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue-Bold",
+                            "rangeLength": 23,
+                            "rangeLocation": 27,
+                            "text": "Morning by morning new ",
+                            "width": 1415.7768124999998
+                        }
+                    ],
+                    "text": "Morning by morning new ",
+                    "trailingWhitespaceWidth": 32.3088125,
+                    "typographicWidth": 1415.7768124999998,
+                    "usedWidth": 1383.4679999999998,
+                    "visualText": "Morning by morning new",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 7,
+                            "rangeLocation": 27,
+                            "text": "Morning",
+                            "width": 462.55062499999997
+                        },
+                        {
+                            "offsetX": 494.85943749999996,
+                            "rangeLength": 2,
+                            "rangeLocation": 35,
+                            "text": "by",
+                            "width": 131.32718749999998
+                        },
+                        {
+                            "offsetX": 658.4954375,
+                            "rangeLength": 7,
+                            "rangeLocation": 38,
+                            "text": "morning",
+                            "width": 462.43440625000017
+                        },
+                        {
+                            "offsetX": 1153.23865625,
+                            "rangeLength": 3,
+                            "rangeLocation": 46,
+                            "text": "new",
+                            "width": 230.22934375
+                        }
+                    ]
+                },
+                {
+                    "ascent": 108,
+                    "baselineX": 332.16765625000005,
+                    "baselineY": 136.31874999999994,
+                    "descent": 19.840625000000017,
+                    "leading": 3.371152400970459,
+                    "rangeLength": 13,
+                    "rangeLocation": 50,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 105.29418749999999,
+                                    "glyphID": 84,
+                                    "glyphName": "m",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 50
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 105.29418749999999,
+                                    "positionY": 0,
+                                    "stringIndex": 51
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 43.11715625,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 172.00375,
+                                    "positionY": 0,
+                                    "stringIndex": 52
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 74,
+                                    "glyphName": "c",
+                                    "positionX": 215.12090625,
+                                    "positionY": 0,
+                                    "stringIndex": 53
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 281.83046875,
+                                    "positionY": 0,
+                                    "stringIndex": 54
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 311.81490625000004,
+                                    "positionY": 0,
+                                    "stringIndex": 55
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 378.52446875000004,
+                                    "positionY": 0,
+                                    "stringIndex": 56
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 440.9339375,
+                                    "positionY": 0,
+                                    "stringIndex": 57
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 34.28453125,
+                                    "glyphID": 48,
+                                    "glyphName": "I",
+                                    "positionX": 473.24275,
+                                    "positionY": 0,
+                                    "stringIndex": 58
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 507.52728125,
+                                    "positionY": 0,
+                                    "stringIndex": 59
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 539.83609375,
+                                    "positionY": 0,
+                                    "stringIndex": 60
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 602.2455625,
+                                    "positionY": 0,
+                                    "stringIndex": 61
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 668.955125,
+                                    "positionY": 0,
+                                    "stringIndex": 62
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue-Bold",
+                            "rangeLength": 13,
+                            "rangeLocation": 50,
+                            "text": "mercies I see",
+                            "width": 735.6646874999999
+                        }
+                    ],
+                    "text": "mercies I see",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 735.6646874999999,
+                    "usedWidth": 735.6646874999999,
+                    "visualText": "mercies I see",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 7,
+                            "rangeLocation": 50,
+                            "text": "mercies",
+                            "width": 440.9339375
+                        },
+                        {
+                            "offsetX": 473.24275,
+                            "rangeLength": 1,
+                            "rangeLocation": 58,
+                            "text": "I",
+                            "width": 34.284531249999986
+                        },
+                        {
+                            "offsetX": 539.83609375,
+                            "rangeLength": 3,
+                            "rangeLocation": 60,
+                            "text": "see",
+                            "width": 195.82859374999987
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-3.0",
+                "maximumLineHeight": "127.84062500000002",
+                "minimumLineHeight": "127.84062500000002",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": 0.039593249999825275,
+                    "chromiumKerningAuto": 1387.960938,
+                    "chromiumKerningDisabled": 1402.953125,
+                    "coreTextKerningAuto": 1388.0005312499998,
+                    "coreTextLegacyKernZero": 1402.99275,
+                    "text": "Great is Your faithfulness"
+                },
+                {
+                    "autoWidthDelta": 0.06649999999990541,
+                    "chromiumKerningAuto": 2151.375,
+                    "chromiumKerningDisabled": 2149.28125,
+                    "coreTextKerningAuto": 2151.4415,
+                    "coreTextLegacyKernZero": 2149.3495625,
+                    "text": "Morning by morning new mercies I see"
+                }
+            ],
+            "purpose": "Existing blocking fixture; explicit FreeShow break plus automatic wrapping",
+            "resolvedFontSize": 116.21875,
+            "suggestedSize": {
+                "height": 384,
+                "width": 1388.0005312499998
+            }
+        },
+        {
+            "baselineSteps": [90.19999999999999, 90.19999999999999, 90.19999999999999],
+            "comparison": {
+                "chromiumLineBoxHeight": 360.78125,
+                "chromiumLines": ["All I have needed", "Your hand has", "provided great is", "Your faithfulness"],
+                "coreTextLines": ["All I have needed", "Your hand has", "provided great is", "Your faithfulness"],
+                "coreTextSuggestedHeight": 361,
+                "fontFaceMatches": true,
+                "heightDelta": 0.21875,
+                "lineBreaksMatch": true,
+                "maximumUnwrappedWidthDelta": 0.003812999998444866,
+                "modeledCSSLineBoxHeight": 360.8
+            },
+            "container": {
+                "height": 600,
+                "width": 760
+            },
+            "cssLineHeight": 90.2,
+            "font": {
+                "ascent": 78.06365966796875,
+                "capHeight": 58.548,
+                "descent": 17.465789794921875,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue",
+                "leading": 2.295989990234375,
+                "normalizedWeightTrait": 0,
+                "postScriptName": "HelveticaNeue",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 400,
+                "size": 82,
+                "styleName": "Regular",
+                "symbolicTraits": 2147483648,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 42.394
+            },
+            "id": "multiline-regular",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 425,
+                "kernZeroLineCount": 4,
+                "kernZeroLines": ["All I have needed", "Your hand has", "provided great is", "Your faithfulness"],
+                "kernZeroSuggestedHeight": 361,
+                "lineHeightMultipleSuggestedHeight": 425
+            },
+            "lines": [
+                {
+                    "ascent": 76,
+                    "baselineX": 65.61200000000008,
+                    "baselineY": 524,
+                    "descent": 14.200000000000003,
+                    "leading": 2.295989990234375,
+                    "rangeLength": 18,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 53.136,
+                                    "glyphID": 40,
+                                    "glyphName": "A",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 53.136,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 71.34,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 89.54400000000001,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 21.238,
+                                    "glyphID": 48,
+                                    "glyphName": "I",
+                                    "positionX": 112.34,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 133.578,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 156.374,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 201.966,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 93,
+                                    "glyphName": "v",
+                                    "positionX": 246,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 287,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 331.034,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 353.83,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 399.42199999999997,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 443.45599999999996,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 487.48999999999995,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 536.116,
+                                    "positionY": 0,
+                                    "stringIndex": 15
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 580.15,
+                                    "positionY": 0,
+                                    "stringIndex": 16
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 628.776,
+                                    "positionY": 0,
+                                    "stringIndex": 17
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 18,
+                            "rangeLocation": 0,
+                            "text": "All I have needed ",
+                            "width": 651.5719999999999
+                        }
+                    ],
+                    "text": "All I have needed ",
+                    "trailingWhitespaceWidth": 22.796,
+                    "typographicWidth": 651.5719999999999,
+                    "usedWidth": 628.7759999999998,
+                    "visualText": "All I have needed",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 3,
+                            "rangeLocation": 0,
+                            "text": "All",
+                            "width": 89.54400000000001
+                        },
+                        {
+                            "offsetX": 112.34,
+                            "rangeLength": 1,
+                            "rangeLocation": 4,
+                            "text": "I",
+                            "width": 21.238
+                        },
+                        {
+                            "offsetX": 156.374,
+                            "rangeLength": 4,
+                            "rangeLocation": 6,
+                            "text": "have",
+                            "width": 174.66
+                        },
+                        {
+                            "offsetX": 353.83,
+                            "rangeLength": 6,
+                            "rangeLocation": 11,
+                            "text": "needed",
+                            "width": 274.94599999999997
+                        }
+                    ]
+                },
+                {
+                    "ascent": 76,
+                    "baselineX": 117.96900000000005,
+                    "baselineY": 433.8,
+                    "descent": 14.200000000000003,
+                    "leading": 2.295989990234375,
+                    "rangeLength": 14,
+                    "rangeLocation": 18,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 64,
+                                    "glyphName": "Y",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 18
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.068000000000005,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 44.034,
+                                    "positionY": 0,
+                                    "stringIndex": 19
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 91.102,
+                                    "positionY": 0,
+                                    "stringIndex": 20
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 27.306,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 136.69400000000002,
+                                    "positionY": 0,
+                                    "stringIndex": 21
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 164.00000000000003,
+                                    "positionY": 0,
+                                    "stringIndex": 22
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 186.79600000000002,
+                                    "positionY": 0,
+                                    "stringIndex": 23
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 232.38800000000003,
+                                    "positionY": 0,
+                                    "stringIndex": 24
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 276.422,
+                                    "positionY": 0,
+                                    "stringIndex": 25
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 322.014,
+                                    "positionY": 0,
+                                    "stringIndex": 26
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 370.64,
+                                    "positionY": 0,
+                                    "stringIndex": 27
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 393.436,
+                                    "positionY": 0,
+                                    "stringIndex": 28
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 439.02799999999996,
+                                    "positionY": 0,
+                                    "stringIndex": 29
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 483.06199999999995,
+                                    "positionY": 0,
+                                    "stringIndex": 30
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 524.0619999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 31
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 14,
+                            "rangeLocation": 18,
+                            "text": "Your hand has ",
+                            "width": 546.858
+                        }
+                    ],
+                    "text": "Your hand has ",
+                    "trailingWhitespaceWidth": 22.796,
+                    "typographicWidth": 546.858,
+                    "usedWidth": 524.0619999999999,
+                    "visualText": "Your hand has",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 4,
+                            "rangeLocation": 18,
+                            "text": "Your",
+                            "width": 164.00000000000003
+                        },
+                        {
+                            "offsetX": 186.79600000000002,
+                            "rangeLength": 4,
+                            "rangeLocation": 23,
+                            "text": "hand",
+                            "width": 183.84399999999997
+                        },
+                        {
+                            "offsetX": 393.436,
+                            "rangeLength": 3,
+                            "rangeLocation": 28,
+                            "text": "has",
+                            "width": 130.62599999999992
+                        }
+                    ]
+                },
+                {
+                    "ascent": 76,
+                    "baselineX": 73.197,
+                    "baselineY": 343.6,
+                    "descent": 14.200000000000003,
+                    "leading": 2.295989990234375,
+                    "rangeLength": 18,
+                    "rangeLocation": 32,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 87,
+                                    "glyphName": "p",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 32
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.830000000000002,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 48.626000000000005,
+                                    "positionY": 0,
+                                    "stringIndex": 33
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.068000000000005,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 74.456,
+                                    "positionY": 0,
+                                    "stringIndex": 34
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 93,
+                                    "glyphName": "v",
+                                    "positionX": 121.524,
+                                    "positionY": 0,
+                                    "stringIndex": 35
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 162.524,
+                                    "positionY": 0,
+                                    "stringIndex": 36
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 180.728,
+                                    "positionY": 0,
+                                    "stringIndex": 37
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 229.354,
+                                    "positionY": 0,
+                                    "stringIndex": 38
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 48.626000000000005,
+                                    "glyphID": 75,
+                                    "glyphName": "d",
+                                    "positionX": 273.38800000000003,
+                                    "positionY": 0,
+                                    "stringIndex": 39
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 322.014,
+                                    "positionY": 0,
+                                    "stringIndex": 40
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.068000000000005,
+                                    "glyphID": 78,
+                                    "glyphName": "g",
+                                    "positionX": 344.81,
+                                    "positionY": 0,
+                                    "stringIndex": 41
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.830000000000002,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 391.878,
+                                    "positionY": 0,
+                                    "stringIndex": 42
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 417.70799999999997,
+                                    "positionY": 0,
+                                    "stringIndex": 43
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 461.74199999999996,
+                                    "positionY": 0,
+                                    "stringIndex": 44
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.830000000000002,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 505.77599999999995,
+                                    "positionY": 0,
+                                    "stringIndex": 45
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 531.606,
+                                    "positionY": 0,
+                                    "stringIndex": 46
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 554.402,
+                                    "positionY": 0,
+                                    "stringIndex": 47
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 572.606,
+                                    "positionY": 0,
+                                    "stringIndex": 48
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 613.606,
+                                    "positionY": 0,
+                                    "stringIndex": 49
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 18,
+                            "rangeLocation": 32,
+                            "text": "provided great is ",
+                            "width": 636.402
+                        }
+                    ],
+                    "text": "provided great is ",
+                    "trailingWhitespaceWidth": 22.796,
+                    "typographicWidth": 636.402,
+                    "usedWidth": 613.606,
+                    "visualText": "provided great is",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 8,
+                            "rangeLocation": 32,
+                            "text": "provided",
+                            "width": 322.014
+                        },
+                        {
+                            "offsetX": 344.81,
+                            "rangeLength": 5,
+                            "rangeLocation": 41,
+                            "text": "great",
+                            "width": 186.796
+                        },
+                        {
+                            "offsetX": 554.402,
+                            "rangeLength": 2,
+                            "rangeLocation": 47,
+                            "text": "is",
+                            "width": 59.20399999999995
+                        }
+                    ]
+                },
+                {
+                    "ascent": 76,
+                    "baselineX": 77.78899999999999,
+                    "baselineY": 253.40000000000003,
+                    "descent": 14.200000000000003,
+                    "leading": 2.295989990234375,
+                    "rangeLength": 17,
+                    "rangeLocation": 50,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 64,
+                                    "glyphName": "Y",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 50
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 47.068000000000005,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 44.034,
+                                    "positionY": 0,
+                                    "stringIndex": 51
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 91.102,
+                                    "positionY": 0,
+                                    "stringIndex": 52
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 27.306,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 136.69400000000002,
+                                    "positionY": 0,
+                                    "stringIndex": 53
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 22.796,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 164.00000000000003,
+                                    "positionY": 0,
+                                    "stringIndex": 54
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 24.272000000000002,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 186.79600000000002,
+                                    "positionY": 0,
+                                    "stringIndex": 55
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 211.068,
+                                    "positionY": 0,
+                                    "stringIndex": 56
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 255.102,
+                                    "positionY": 0,
+                                    "stringIndex": 57
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.830000000000002,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 273.306,
+                                    "positionY": 0,
+                                    "stringIndex": 58
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 299.13599999999997,
+                                    "positionY": 0,
+                                    "stringIndex": 59
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 24.272000000000002,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 344.72799999999995,
+                                    "positionY": 0,
+                                    "stringIndex": 60
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 368.99999999999994,
+                                    "positionY": 0,
+                                    "stringIndex": 61
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 18.204,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 414.5919999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 62
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.592,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 432.79599999999994,
+                                    "positionY": 0,
+                                    "stringIndex": 63
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 44.034,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 478.3879999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 64
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 522.4219999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 65
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 41,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 563.4219999999999,
+                                    "positionY": 0,
+                                    "stringIndex": 66
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 17,
+                            "rangeLocation": 50,
+                            "text": "Your faithfulness",
+                            "width": 604.422
+                        }
+                    ],
+                    "text": "Your faithfulness",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 604.422,
+                    "usedWidth": 604.422,
+                    "visualText": "Your faithfulness",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 4,
+                            "rangeLocation": 50,
+                            "text": "Your",
+                            "width": 164.00000000000003
+                        },
+                        {
+                            "offsetX": 186.79600000000002,
+                            "rangeLength": 12,
+                            "rangeLocation": 55,
+                            "text": "faithfulness",
+                            "width": 417.62599999999986
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-2.0",
+                "maximumLineHeight": "90.2",
+                "minimumLineHeight": "90.2",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": -0.003812999998444866,
+                    "chromiumKerningAuto": 2439.257813,
+                    "chromiumKerningDisabled": 2460.414063,
+                    "coreTextKerningAuto": 2439.2540000000017,
+                    "coreTextLegacyKernZero": 2460.4100000000017,
+                    "text": "All I have needed Your hand has provided great is Your faithfulness"
+                }
+            ],
+            "purpose": "One paragraph that wraps to several visual lines",
+            "resolvedFontSize": 82,
+            "suggestedSize": {
+                "height": 361,
+                "width": 628.7759999999998
+            }
+        },
+        {
+            "baselineSteps": [],
+            "comparison": {
+                "chromiumLineBoxHeight": 127.8359375,
+                "chromiumLines": ["Great is Your faithfulness"],
+                "coreTextLines": ["Great is Your faithfulness"],
+                "coreTextSuggestedHeight": 128,
+                "fontFaceMatches": true,
+                "heightDelta": 0.1640625,
+                "lineBreaksMatch": true,
+                "maximumUnwrappedWidthDelta": 0.03993700000023637,
+                "modeledCSSLineBoxHeight": 127.84062500000002
+            },
+            "container": {
+                "height": 220,
+                "width": 1400
+            },
+            "cssLineHeight": 127.84062500000002,
+            "font": {
+                "ascent": 110.63976764678955,
+                "capHeight": 82.9801875,
+                "descent": 24.754295825958252,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue",
+                "leading": 3.254110813140869,
+                "normalizedWeightTrait": 0,
+                "postScriptName": "HelveticaNeue",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 400,
+                "size": 116.21875,
+                "styleName": "Regular",
+                "symbolicTraits": 2147483648,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 60.08509375
+            },
+            "id": "weight-regular",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 150,
+                "kernZeroLineCount": 1,
+                "kernZeroLines": ["Great is Your faithfulness"],
+                "kernZeroSuggestedHeight": 128,
+                "lineHeightMultipleSuggestedHeight": 150
+            },
+            "lines": [
+                {
+                    "ascent": 107,
+                    "baselineX": 54.28862499999991,
+                    "baselineY": 113,
+                    "descent": 20.840625000000017,
+                    "leading": 3.254110813140869,
+                    "rangeLength": 26,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 88.21003125,
+                                    "glyphID": 46,
+                                    "glyphName": "G",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 36.60890625,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 88.21003125,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 124.8189375,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 187.22840625,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 36.60890625,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 249.637875,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 286.24678125,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.800562499999998,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 318.55559375,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 58.109375,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 344.35615625,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 402.46553125,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 64,
+                                    "glyphName": "Y",
+                                    "positionX": 434.77434375,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 497.1838125,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.617625,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 563.893375,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 628.511,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 667.21184375,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 34.40075,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 699.52065625,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 733.92140625,
+                                    "positionY": 0,
+                                    "stringIndex": 15
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.800562499999998,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 796.330875,
+                                    "positionY": 0,
+                                    "stringIndex": 16
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 36.60890625,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 822.1314375,
+                                    "positionY": 0,
+                                    "stringIndex": 17
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.617625,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 858.74034375,
+                                    "positionY": 0,
+                                    "stringIndex": 18
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 34.40075,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 923.3579687499999,
+                                    "positionY": 0,
+                                    "stringIndex": 19
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.617625,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 957.75871875,
+                                    "positionY": 0,
+                                    "stringIndex": 20
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 25.800562499999998,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 1022.3763437499999,
+                                    "positionY": 0,
+                                    "stringIndex": 21
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.617625,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 1048.17690625,
+                                    "positionY": 0,
+                                    "stringIndex": 22
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 1112.79453125,
+                                    "positionY": 0,
+                                    "stringIndex": 23
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 58.109375,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1175.2040000000002,
+                                    "positionY": 0,
+                                    "stringIndex": 24
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 58.109375,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1233.3133750000002,
+                                    "positionY": 0,
+                                    "stringIndex": 25
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue",
+                            "rangeLength": 26,
+                            "rangeLocation": 0,
+                            "text": "Great is Your faithfulness",
+                            "width": 1291.4227500000002
+                        }
+                    ],
+                    "text": "Great is Your faithfulness",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 1291.4227500000002,
+                    "usedWidth": 1291.4227500000002,
+                    "visualText": "Great is Your faithfulness",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 5,
+                            "rangeLocation": 0,
+                            "text": "Great",
+                            "width": 286.24678125
+                        },
+                        {
+                            "offsetX": 318.55559375,
+                            "rangeLength": 2,
+                            "rangeLocation": 6,
+                            "text": "is",
+                            "width": 83.90993750000001
+                        },
+                        {
+                            "offsetX": 434.77434375,
+                            "rangeLength": 4,
+                            "rangeLocation": 9,
+                            "text": "Your",
+                            "width": 232.43749999999994
+                        },
+                        {
+                            "offsetX": 699.52065625,
+                            "rangeLength": 12,
+                            "rangeLocation": 14,
+                            "text": "faithfulness",
+                            "width": 591.9020937500002
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-3.0",
+                "maximumLineHeight": "127.84062500000002",
+                "minimumLineHeight": "127.84062500000002",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": 0.03993700000023637,
+                    "chromiumKerningAuto": 1291.382813,
+                    "chromiumKerningDisabled": 1306.375,
+                    "coreTextKerningAuto": 1291.4227500000002,
+                    "coreTextLegacyKernZero": 1306.4149687500003,
+                    "text": "Great is Your faithfulness"
+                }
+            ],
+            "purpose": "Weight control at 400",
+            "resolvedFontSize": 116.21875,
+            "suggestedSize": {
+                "height": 128,
+                "width": 1291.4227500000002
+            }
+        },
+        {
+            "baselineSteps": [],
+            "comparison": {
+                "chromiumLineBoxHeight": 127.8359375,
+                "chromiumLines": ["Great is Your faithfulness"],
+                "coreTextLines": ["Great is Your faithfulness"],
+                "coreTextSuggestedHeight": 128,
+                "fontFaceMatches": true,
+                "heightDelta": 0.1640625,
+                "lineBreaksMatch": true,
+                "maximumUnwrappedWidthDelta": 0.039593249999825275,
+                "modeledCSSLineBoxHeight": 127.84062500000002
+            },
+            "container": {
+                "height": 220,
+                "width": 1400
+            },
+            "cssLineHeight": 127.84062500000002,
+            "font": {
+                "ascent": 113.31399059295654,
+                "capHeight": 82.9801875,
+                "descent": 25.218915462493896,
+                "familyName": "Helvetica Neue",
+                "fileURL": "/System/Library/Fonts/HelveticaNeue.ttc",
+                "fullName": "Helvetica Neue Bold",
+                "leading": 3.371152400970459,
+                "normalizedWeightTrait": 0.4,
+                "postScriptName": "HelveticaNeue-Bold",
+                "requestedFamily": "Helvetica Neue",
+                "requestedWeight": 700,
+                "size": 116.21875,
+                "styleName": "Bold",
+                "symbolicTraits": 2147483650,
+                "unitsPerEm": 1000,
+                "variationAxes": [],
+                "xHeight": 60.08509375
+            },
+            "id": "weight-bold",
+            "insets": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "legacyTranslation": {
+                "combinedSuggestedHeight": 307,
+                "kernZeroLineCount": 2,
+                "kernZeroLines": ["Great is Your", "faithfulness"],
+                "kernZeroSuggestedHeight": 256,
+                "lineHeightMultipleSuggestedHeight": 153
+            },
+            "lines": [
+                {
+                    "ascent": 108,
+                    "baselineX": 5.999734375000116,
+                    "baselineY": 112,
+                    "descent": 19.840625000000017,
+                    "leading": 3.371152400970459,
+                    "rangeLength": 26,
+                    "rangeLocation": 0,
+                    "runs": [
+                        {
+                            "glyphs": [
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 88.21003125,
+                                    "glyphID": 46,
+                                    "glyphName": "G",
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "stringIndex": 0
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 43.11715625,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 88.21003125,
+                                    "positionY": 0,
+                                    "stringIndex": 1
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 131.3271875,
+                                    "positionY": 0,
+                                    "stringIndex": 2
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 198.03675,
+                                    "positionY": 0,
+                                    "stringIndex": 3
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 40.909,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 264.74631250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 4
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 305.65531250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 5
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 337.964125,
+                                    "positionY": 0,
+                                    "stringIndex": 6
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 367.94856250000004,
+                                    "positionY": 0,
+                                    "stringIndex": 7
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 430.35803125,
+                                    "positionY": 0,
+                                    "stringIndex": 8
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 64.61762499999999,
+                                    "glyphID": 64,
+                                    "glyphName": "Y",
+                                    "positionX": 462.66684375,
+                                    "positionY": 0,
+                                    "stringIndex": 9
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 71.00965624999999,
+                                    "glyphID": 86,
+                                    "glyphName": "o",
+                                    "positionX": 527.28446875,
+                                    "positionY": 0,
+                                    "stringIndex": 10
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 598.294125,
+                                    "positionY": 0,
+                                    "stringIndex": 11
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 45.20909375,
+                                    "glyphID": 89,
+                                    "glyphName": "r",
+                                    "positionX": 667.21184375,
+                                    "positionY": 0,
+                                    "stringIndex": 12
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 32.3088125,
+                                    "glyphID": 3,
+                                    "glyphName": "space",
+                                    "positionX": 712.4209374999999,
+                                    "positionY": 0,
+                                    "stringIndex": 13
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 744.72975,
+                                    "positionY": 0,
+                                    "stringIndex": 14
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 72,
+                                    "glyphName": "a",
+                                    "positionX": 783.43059375,
+                                    "positionY": 0,
+                                    "stringIndex": 15
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 80,
+                                    "glyphName": "i",
+                                    "positionX": 850.14015625,
+                                    "positionY": 0,
+                                    "stringIndex": 16
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 40.909,
+                                    "glyphID": 91,
+                                    "glyphName": "t",
+                                    "positionX": 880.12459375,
+                                    "positionY": 0,
+                                    "stringIndex": 17
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 79,
+                                    "glyphName": "h",
+                                    "positionX": 921.03359375,
+                                    "positionY": 0,
+                                    "stringIndex": 18
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 38.70084375,
+                                    "glyphID": 77,
+                                    "glyphName": "f",
+                                    "positionX": 989.9513125,
+                                    "positionY": 0,
+                                    "stringIndex": 19
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 92,
+                                    "glyphName": "u",
+                                    "positionX": 1028.65215625,
+                                    "positionY": 0,
+                                    "stringIndex": 20
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 29.9844375,
+                                    "glyphID": 83,
+                                    "glyphName": "l",
+                                    "positionX": 1097.569875,
+                                    "positionY": 0,
+                                    "stringIndex": 21
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 68.91771874999999,
+                                    "glyphID": 85,
+                                    "glyphName": "n",
+                                    "positionX": 1127.5543125,
+                                    "positionY": 0,
+                                    "stringIndex": 22
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 66.7095625,
+                                    "glyphID": 76,
+                                    "glyphName": "e",
+                                    "positionX": 1196.4720312499999,
+                                    "positionY": 0,
+                                    "stringIndex": 23
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1263.1815937499998,
+                                    "positionY": 0,
+                                    "stringIndex": 24
+                                },
+                                {
+                                    "advanceHeight": 0,
+                                    "advanceWidth": 62.409468749999995,
+                                    "glyphID": 90,
+                                    "glyphName": "s",
+                                    "positionX": 1325.5910625,
+                                    "positionY": 0,
+                                    "stringIndex": 25
+                                }
+                            ],
+                            "postScriptName": "HelveticaNeue-Bold",
+                            "rangeLength": 26,
+                            "rangeLocation": 0,
+                            "text": "Great is Your faithfulness",
+                            "width": 1388.0005312499998
+                        }
+                    ],
+                    "text": "Great is Your faithfulness",
+                    "trailingWhitespaceWidth": 0,
+                    "typographicWidth": 1388.0005312499998,
+                    "usedWidth": 1388.0005312499998,
+                    "visualText": "Great is Your faithfulness",
+                    "words": [
+                        {
+                            "offsetX": 0,
+                            "rangeLength": 5,
+                            "rangeLocation": 0,
+                            "text": "Great",
+                            "width": 305.65531250000004
+                        },
+                        {
+                            "offsetX": 337.964125,
+                            "rangeLength": 2,
+                            "rangeLocation": 6,
+                            "text": "is",
+                            "width": 92.39390624999999
+                        },
+                        {
+                            "offsetX": 462.66684375,
+                            "rangeLength": 4,
+                            "rangeLocation": 9,
+                            "text": "Your",
+                            "width": 249.75409374999992
+                        },
+                        {
+                            "offsetX": 744.72975,
+                            "rangeLength": 12,
+                            "rangeLocation": 14,
+                            "text": "faithfulness",
+                            "width": 643.27078125
+                        }
+                    ]
+                }
+            ],
+            "paragraphStyle": {
+                "alignment": "center",
+                "lineBreak": "CoreText default greedy word wrapping",
+                "lineSpacingAdjustment": "-3.0",
+                "maximumLineHeight": "127.84062500000002",
+                "minimumLineHeight": "127.84062500000002",
+                "whiteSpaceInput": "explicit FreeShow line blocks joined by newline"
+            },
+            "paragraphWidths": [
+                {
+                    "autoWidthDelta": 0.039593249999825275,
+                    "chromiumKerningAuto": 1387.960938,
+                    "chromiumKerningDisabled": 1402.953125,
+                    "coreTextKerningAuto": 1388.0005312499998,
+                    "coreTextLegacyKernZero": 1402.99275,
+                    "text": "Great is Your faithfulness"
+                }
+            ],
+            "purpose": "Weight control at 700",
+            "resolvedFontSize": 116.21875,
+            "suggestedSize": {
+                "height": 128,
+                "width": 1388.0005312499998
+            }
+        }
+    ],
+    "generatedAt": "2026-08-11T16:29:43Z",
+    "runtime": {
+        "architecture": "arm64",
+        "operatingSystem": "Version 26.5.2 (Build 25F84)",
+        "renderer": "CoreText/CoreGraphics"
+    }
+}

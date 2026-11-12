@@ -2,7 +2,7 @@ import type { BrowserWindow, Rectangle } from "electron"
 import { screen } from "electron"
 import { isMac, mainWindow, toApp } from "../.."
 import { MAIN, OUTPUT } from "../../../types/Channels"
-import type { Output } from "../../../types/Output"
+import { usesScrimOnlyRenderer, type Output } from "../../../types/Output"
 import { OutputHelper } from "../OutputHelper"
 import { setOutputAlwaysOnTop } from "./OutputAlwaysOnTop"
 import { OutputBounds } from "./OutputBounds"
@@ -22,6 +22,7 @@ export class OutputVisibility {
 
     static toggleOutput(output: Output & { id: string }, state: boolean, autoStartup?: boolean, autoPosition?: boolean) {
         if (!output?.id) return false
+        if (usesScrimOnlyRenderer(output)) return false
 
         let window: BrowserWindow = OutputHelper.getOutput(output.id)?.window
 

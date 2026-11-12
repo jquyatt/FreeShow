@@ -1,0 +1,53 @@
+{
+  "protocol": "flywire",
+  "version": 1,
+  "type": "scene",
+  "sequence": 1,
+  "sentAt": 1786464000000,
+  "scene": {
+    "id": "comparison:1",
+    "outputId": "comparison",
+    "canvas": { "width": 1920, "height": 1080 },
+    "background": { "color": "#101318" },
+    "items": [
+      {
+        "id": "autosize-text",
+        "kind": "text",
+        "frame": { "x": 260, "y": 290, "width": 1400, "height": 500 },
+        "text": "Great is Your faithfulness\nMorning by morning new mercies I see",
+        "runs": [
+          {
+            "text": "Great is Your faithfulness\nMorning by morning new mercies I see",
+            "style": {
+              "fontFamily": "Helvetica Neue",
+              "fontSize": 116.21875,
+              "fontWeight": 700,
+              "italic": false,
+              "color": "#ffffff",
+              "underline": false,
+              "letterSpacing": 0,
+              "wordSpacing": 0,
+              "lineHeight": 1.1
+            }
+          }
+        ],
+        "visualLines": [
+          { "location": 0, "length": 26 },
+          { "location": 27, "length": 19 },
+          { "location": 46, "length": 17 }
+        ],
+        "textAlign": "center",
+        "verticalAlign": "center",
+        "opacity": 1,
+        "textFit": "shrinkToFit",
+        "chromiumFontSize": 116.21875
+      }
+    ],
+    "transition": {
+      "media": { "type": "fade", "durationMs": 500, "easing": "linear" },
+      "text": { "type": "fade", "durationMs": 500, "easing": "linear" }
+    },
+    "unsupported": [],
+    "source": { "showId": "scrim-autosize", "layoutId": "default", "slideIndex": 0, "slideId": "autosize" }
+  }
+}

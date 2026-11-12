@@ -1,7 +1,7 @@
 import { BrowserWindow, screen, type BrowserWindowConstructorOptions } from "electron"
 import { OUTPUT_CONSOLE, getMainWindow, hardwareAccelerationDisabled, isMac, loadWindowContent, toApp } from "../.."
 import { OUTPUT } from "../../../types/Channels"
-import type { Output } from "../../../types/Output"
+import { usesScrimOnlyRenderer, type Output } from "../../../types/Output"
 import { BlackmagicSender } from "../../blackmagic/BlackmagicSender"
 import { initializeSender } from "../../blackmagic/bmdTalk"
 import { CaptureHelper } from "../../capture/CaptureHelper"
@@ -82,6 +82,11 @@ export class OutputLifecycle {
         const id: string = output.id || ""
         if (!id) return
 
+        if (usesScrimOnlyRenderer(output)) {
+            if (OutputHelper.getOutput(id)) await this.removeOutput(id)
+            return
+        }
+
         if (OutputHelper.getOutput(id)) {
             CaptureHelper.Lifecycle.stopCapture(id)
             this.removeOutput(id, output)
@@ -128,6 +133,22 @@ export class OutputLifecycle {
 
         // Blackmagic
         if (output.blackmagic) initializeSender(output, outputWindow, id)
+    }
+
+    static async setRenderMode(output: Output & { presenting?: boolean }) {
+        const id = output.id || ""
+        if (!id) return
+
+        if (usesScrimOnlyRenderer(output)) {
+            if (OutputHelper.getOutput(id)) await this.removeOutput(id)
+            return
+        }
+
+        if (output.enabled && !OutputHelper.getOutput(id)) {
+            await this.createOutput(output)
+            const active = output.presenting === true ? OutputVisibility.toggleOutput(output as Output & { id: string }, true, !!output.boundsLocked) : false
+            toApp(OUTPUT, { channel: "OUTPUT_STATE", data: [{ id, active }] })
+        }
     }
 
     /*

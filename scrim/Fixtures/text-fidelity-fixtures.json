@@ -1,0 +1,61 @@
+{
+    "version": 1,
+    "fontFamily": "Helvetica Neue",
+    "lineHeight": 1.1,
+    "fixtures": [
+        {
+            "id": "single-line-regular",
+            "purpose": "Single visual line at a fixed size",
+            "frame": { "width": 1400, "height": 220 },
+            "paragraphs": ["Grace and peace"],
+            "fontSize": 116.21875,
+            "fontWeight": 400,
+            "textFit": "none"
+        },
+        {
+            "id": "manual-break-regular",
+            "purpose": "Two explicit FreeShow line blocks without automatic wrapping",
+            "frame": { "width": 1400, "height": 360 },
+            "paragraphs": ["Amazing grace", "How sweet the sound"],
+            "fontSize": 96,
+            "fontWeight": 400,
+            "textFit": "none"
+        },
+        {
+            "id": "shrink-near-wrap-bold",
+            "purpose": "Existing blocking fixture; explicit FreeShow break plus automatic wrapping",
+            "frame": { "width": 1400, "height": 500 },
+            "paragraphs": ["Great is Your faithfulness", "Morning by morning new mercies I see"],
+            "fontSize": 160,
+            "fontWeight": 700,
+            "textFit": "shrinkToFit"
+        },
+        {
+            "id": "multiline-regular",
+            "purpose": "One paragraph that wraps to several visual lines",
+            "frame": { "width": 760, "height": 600 },
+            "paragraphs": ["All I have needed Your hand has provided great is Your faithfulness"],
+            "fontSize": 82,
+            "fontWeight": 400,
+            "textFit": "none"
+        },
+        {
+            "id": "weight-regular",
+            "purpose": "Weight control at 400",
+            "frame": { "width": 1400, "height": 220 },
+            "paragraphs": ["Great is Your faithfulness"],
+            "fontSize": 116.21875,
+            "fontWeight": 400,
+            "textFit": "none"
+        },
+        {
+            "id": "weight-bold",
+            "purpose": "Weight control at 700",
+            "frame": { "width": 1400, "height": 220 },
+            "paragraphs": ["Great is Your faithfulness"],
+            "fontSize": 116.21875,
+            "fontWeight": 700,
+            "textFit": "none"
+        }
+    ]
+}

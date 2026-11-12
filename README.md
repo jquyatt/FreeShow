@@ -62,6 +62,13 @@ Feedback is welcome! Please [open a discussion here](https://github.com/orgs/Chu
 
 Head over to [FreeShow on Transifex](https://app.transifex.com/nettbiter/freeshow/) to request a language.
 
+## Scrim and Flywire
+
+This fork includes an experimental preview of Flywire scene publishing and
+Scrim, a native macOS output renderer. It is intended for local testing on one
+Mac, not as a supported FreeShow release. See the
+[Scrim quickstart](scrim/README.md) to run both together.
+
 ## Help the development
 
 You are welcome to contribute to the code!

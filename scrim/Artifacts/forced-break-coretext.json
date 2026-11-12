@@ -1,0 +1,6331 @@
+{
+  "chromiumDevicePixelRatio" : 2,
+  "chromiumUserAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.251 Electron/37.10.3 Safari/537.36",
+  "fixtures" : [
+    {
+      "blockHeightDelta" : 0.004687000000018315,
+      "blockTopDelta" : 0.0015624999999914735,
+      "chromiumBlockHeight" : 127.835938,
+      "chromiumBlockTop" : 46.078125,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 88.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "G"
+        },
+        {
+          "chromiumAdvance" : 38.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 62.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 64.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 68.929688,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : "p"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 62.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 127.84062500000002,
+      "coreTextBlockTop" : 46.07968749999999,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "plain-single-line",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.3646109104156494,
+          "chromiumBaselineY" : 152.578125,
+          "chromiumRuns" : [
+            {
+              "advance" : 893.234375,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 15,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 893.234375,
+          "chromiumX" : 253.382813,
+          "coreTextBaselineY" : 152.94273591041565,
+          "coreTextRuns" : [
+            {
+              "advance" : 893.2573124999998,
+              "glyphs" : [
+                {
+                  "advance" : 88.21003125,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 64.617625,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 14
+                }
+              ],
+              "range" : {
+                "length" : 15,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 893.2573124999998,
+          "coreTextX" : 253.3713437500001,
+          "maximumRunAdvanceDelta" : 0.02293749999978445,
+          "range" : {
+            "length" : 15,
+            "location" : 0
+          },
+          "text" : "Grace and peace",
+          "widthDelta" : 0.02293749999978445,
+          "xDelta" : -0.011469249999890962
+        }
+      ],
+      "maximumBaselineDelta" : 0.3646109104156494,
+      "maximumHorizontalPositionDelta" : 0.011469249999890962,
+      "maximumLineWidthDelta" : 0.02293749999978445,
+      "maximumRunAdvanceDelta" : 0.02293749999978445,
+      "purpose" : "Plain text on one visual line",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.012500000000045475,
+      "blockTopDelta" : -0.006250000000022737,
+      "chromiumBlockHeight" : 211.1875,
+      "chromiumBlockTop" : 74.40625,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 62.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "A"
+        },
+        {
+          "chromiumAdvance" : 81.898438,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 51.554688,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 46.09375,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "z"
+        },
+        {
+          "chromiumAdvance" : 21.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 53.382813,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 55.109375,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 26.695313,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 55.109375,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 31.976563,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 51.5625,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 51.5625,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 51.554688,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 69.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "H"
+        },
+        {
+          "chromiumAdvance" : 55.117188,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 72.773438,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 26.695313,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 72.773438,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 51.5625,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 51.5625,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 30.242188,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 26.703125,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 30.242188,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 53.382813,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 51.5625,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 26.695313,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 55.109375,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 53.390625,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 53.382813,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 56.929688,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 211.20000000000005,
+      "coreTextBlockTop" : 74.39999999999998,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "explicit-newline",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.26567382812498863,
+          "chromiumBaselineY" : 162.40625,
+          "chromiumRuns" : [
+            {
+              "advance" : 639.9375,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 13,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 639.9375,
+          "chromiumX" : 380.03125,
+          "coreTextBaselineY" : 162.671923828125,
+          "coreTextRuns" : [
+            {
+              "advance" : 639.936,
+              "glyphs" : [
+                {
+                  "advance" : 62.208,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 81.888,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 46.08,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 21.312,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 53.376,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 55.104,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 26.688,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 55.104,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 31.968,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 12
+                }
+              ],
+              "range" : {
+                "length" : 13,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 639.936,
+          "coreTextX" : 380.032,
+          "maximumRunAdvanceDelta" : 0.0014999999999645297,
+          "range" : {
+            "length" : 13,
+            "location" : 0
+          },
+          "text" : "Amazing grace",
+          "widthDelta" : -0.0014999999999645297,
+          "xDelta" : 0.0007499999999822649
+        },
+        {
+          "baselineDelta" : 0.27192382812501137,
+          "chromiumBaselineY" : 268,
+          "chromiumRuns" : [
+            {
+              "advance" : 933.3125,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 14
+              }
+            }
+          ],
+          "chromiumWidth" : 933.3125,
+          "chromiumX" : 233.34375,
+          "coreTextBaselineY" : 268.271923828125,
+          "coreTextRuns" : [
+            {
+              "advance" : 933.312,
+              "glyphs" : [
+                {
+                  "advance" : 69.312,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 55.104,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 72.768,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 26.688,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 48,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 72.768,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 30.240000000000002,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 26.688,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 30.240000000000002,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 53.376,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 51.552,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 26.688,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 48,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 55.104,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 53.376,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 53.376,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 56.928000000000004,
+                  "stringIndex" : 32
+                }
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 14
+              }
+            }
+          ],
+          "coreTextWidth" : 933.312,
+          "coreTextX" : 233.344,
+          "maximumRunAdvanceDelta" : 0.0004999999999881766,
+          "range" : {
+            "length" : 19,
+            "location" : 14
+          },
+          "text" : "How sweet the sound",
+          "widthDelta" : -0.0004999999999881766,
+          "xDelta" : 0.0002499999999940883
+        }
+      ],
+      "maximumBaselineDelta" : 0.27192382812501137,
+      "maximumHorizontalPositionDelta" : 0.0007499999999822649,
+      "maximumLineWidthDelta" : 0.0014999999999645297,
+      "maximumRunAdvanceDelta" : 0.0014999999999645297,
+      "purpose" : "Two authored lines separated by an explicit newline",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.014062000000080843,
+      "blockTopDelta" : -0.003125500000038528,
+      "chromiumBlockHeight" : 383.507813,
+      "chromiumBlockTop" : 58.242188,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 88.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "G"
+        },
+        {
+          "chromiumAdvance" : 44.171875,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 65.664063,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 40.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 32.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 29.984375,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 62.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 71.070313,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "Y"
+        },
+        {
+          "chromiumAdvance" : 64.570313,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 45.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 32.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 38.703125,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 40.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 38.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 105.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : "M"
+        },
+        {
+          "chromiumAdvance" : 71.015625,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 46.257813,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 69.96875,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 71.015625,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 71.015625,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 0,
+          "text" : "b"
+        },
+        {
+          "chromiumAdvance" : 60.328125,
+          "range" : {
+            "length" : 1,
+            "location" : 36
+          },
+          "runIndex" : 0,
+          "text" : "y"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 37
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 105.296875,
+          "range" : {
+            "length" : 1,
+            "location" : 38
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 71.015625,
+          "range" : {
+            "length" : 1,
+            "location" : 39
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 46.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 40
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 69.96875,
+          "range" : {
+            "length" : 1,
+            "location" : 41
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 42
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 43
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 71.015625,
+          "range" : {
+            "length" : 1,
+            "location" : 44
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 45
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 46
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 47
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 94.609375,
+          "range" : {
+            "length" : 1,
+            "location" : 48
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 49
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 105.304688,
+          "range" : {
+            "length" : 1,
+            "location" : 50
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 51
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 44.171875,
+          "range" : {
+            "length" : 1,
+            "location" : 52
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 65.664063,
+          "range" : {
+            "length" : 1,
+            "location" : 53
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 54
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 55
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 56
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 57
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 34.296875,
+          "range" : {
+            "length" : 1,
+            "location" : 58
+          },
+          "runIndex" : 0,
+          "text" : "I"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 59
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 60
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 61
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 62
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue-Bold"
+      ],
+      "coreTextBlockHeight" : 383.5218750000001,
+      "coreTextBlockTop" : 58.23906249999996,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue-Bold"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "shrink-to-fit-balanced",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : -0.03527543476872097,
+          "chromiumBaselineY" : 166.242188,
+          "chromiumRuns" : [
+            {
+              "advance" : 1387.960938,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 1387.960938,
+          "chromiumX" : 6.015625,
+          "coreTextBaselineY" : 166.20691256523128,
+          "coreTextRuns" : [
+            {
+              "advance" : 1388.0005312499998,
+              "glyphs" : [
+                {
+                  "advance" : 88.21003125,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 43.11715625,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 40.909,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 64.61762499999999,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 45.20909375,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 40.909,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 25
+                }
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 1388.0005312499998,
+          "coreTextX" : 5.999734375000116,
+          "maximumRunAdvanceDelta" : 0.039593249999825275,
+          "range" : {
+            "length" : 26,
+            "location" : 0
+          },
+          "text" : "Great is Your faithfulness",
+          "widthDelta" : 0.039593249999825275,
+          "xDelta" : -0.015890624999883585
+        },
+        {
+          "baselineDelta" : -0.030587434768676758,
+          "chromiumBaselineY" : 294.078125,
+          "chromiumRuns" : [
+            {
+              "advance" : 1153.210938,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 27
+              }
+            }
+          ],
+          "chromiumWidth" : 1153.210938,
+          "chromiumX" : 139.546875,
+          "coreTextBaselineY" : 294.0475375652313,
+          "coreTextRuns" : [
+            {
+              "advance" : 1153.23865625,
+              "glyphs" : [
+                {
+                  "advance" : 105.41040625,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 47.30103125,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 35
+                },
+                {
+                  "advance" : 60.317531249999995,
+                  "stringIndex" : 36
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 37
+                },
+                {
+                  "advance" : 105.29418749999999,
+                  "stringIndex" : 38
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 39
+                },
+                {
+                  "advance" : 47.30103125,
+                  "stringIndex" : 40
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 41
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 42
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 43
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 44
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 45
+                }
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 27
+              }
+            }
+          ],
+          "coreTextWidth" : 1153.23865625,
+          "coreTextX" : 139.53507812499993,
+          "maximumRunAdvanceDelta" : 0.027718250000134503,
+          "range" : {
+            "length" : 19,
+            "location" : 27
+          },
+          "text" : "Morning by morning ",
+          "widthDelta" : 0.027718250000134503,
+          "xDelta" : -0.01179687500007276
+        },
+        {
+          "baselineDelta" : -0.02590043476863002,
+          "chromiumBaselineY" : 421.914063,
+          "chromiumRuns" : [
+            {
+              "advance" : 998.171875,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 46
+              }
+            }
+          ],
+          "chromiumWidth" : 998.171875,
+          "chromiumX" : 200.914063,
+          "coreTextBaselineY" : 421.88816256523137,
+          "coreTextRuns" : [
+            {
+              "advance" : 998.2028437499999,
+              "glyphs" : [
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 46
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 47
+                },
+                {
+                  "advance" : 94.6020625,
+                  "stringIndex" : 48
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 49
+                },
+                {
+                  "advance" : 105.29418749999999,
+                  "stringIndex" : 50
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 51
+                },
+                {
+                  "advance" : 43.11715625,
+                  "stringIndex" : 52
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 53
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 54
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 55
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 56
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 57
+                },
+                {
+                  "advance" : 34.28453125,
+                  "stringIndex" : 58
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 59
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 60
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 61
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 62
+                }
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 46
+              }
+            }
+          ],
+          "coreTextWidth" : 998.2028437499999,
+          "coreTextX" : 200.89857812500003,
+          "maximumRunAdvanceDelta" : 0.030968749999942702,
+          "range" : {
+            "length" : 17,
+            "location" : 46
+          },
+          "text" : "new mercies I see",
+          "widthDelta" : 0.030968749999942702,
+          "xDelta" : -0.015484874999970089
+        }
+      ],
+      "maximumBaselineDelta" : 0.03527543476872097,
+      "maximumHorizontalPositionDelta" : 0.015890624999883585,
+      "maximumLineWidthDelta" : 0.039593249999825275,
+      "maximumRunAdvanceDelta" : 0.039593249999825275,
+      "purpose" : "Blocking shrink-to-fit fixture with a balanced visual wrap",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.018750000000068212,
+      "blockTopDelta" : -0.009375000000034106,
+      "chromiumBlockHeight" : 360.78125,
+      "chromiumBlockTop" : 119.609375,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 53.140625,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "A"
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 21.242188,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "I"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 44.039063,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "v"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 44.039063,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 44.039063,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 22.796875,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.585938,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : "Y"
+        },
+        {
+          "chromiumAdvance" : 42.53125,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 45.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 27.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 22.796875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 45.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 44.039063,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 22.796875,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : "p"
+        },
+        {
+          "chromiumAdvance" : 26.570313,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 46.34375,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 0,
+          "text" : "v"
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 36
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 37
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 44.039063,
+          "range" : {
+            "length" : 1,
+            "location" : 38
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 48.632813,
+          "range" : {
+            "length" : 1,
+            "location" : 39
+          },
+          "runIndex" : 0,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 40
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 47.078125,
+          "range" : {
+            "length" : 1,
+            "location" : 41
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 26.578125,
+          "range" : {
+            "length" : 1,
+            "location" : 42
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 43.296875,
+          "range" : {
+            "length" : 1,
+            "location" : 43
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 44
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 25.835938,
+          "range" : {
+            "length" : 1,
+            "location" : 45
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 22.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 46
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 47
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 48
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 22.796875,
+          "range" : {
+            "length" : 1,
+            "location" : 49
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.585938,
+          "range" : {
+            "length" : 1,
+            "location" : 50
+          },
+          "runIndex" : 0,
+          "text" : "Y"
+        },
+        {
+          "chromiumAdvance" : 42.53125,
+          "range" : {
+            "length" : 1,
+            "location" : 51
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 45.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 52
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 27.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 53
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 22.796875,
+          "range" : {
+            "length" : 1,
+            "location" : 54
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 24.28125,
+          "range" : {
+            "length" : 1,
+            "location" : 55
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 56
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 57
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 25.835938,
+          "range" : {
+            "length" : 1,
+            "location" : 58
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 59
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 24.273438,
+          "range" : {
+            "length" : 1,
+            "location" : 60
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 61
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 18.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 62
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 45.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 63
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 44.046875,
+          "range" : {
+            "length" : 1,
+            "location" : 64
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 65
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 41.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 66
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 360.80000000000007,
+      "coreTextBlockTop" : 119.59999999999997,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "balanced-multiline",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.3895599365233977,
+          "chromiumBaselineY" : 194.609375,
+          "chromiumRuns" : [
+            {
+              "advance" : 651.578125,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 18,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 651.578125,
+          "chromiumX" : 65.609375,
+          "coreTextBaselineY" : 194.9989349365234,
+          "coreTextRuns" : [
+            {
+              "advance" : 651.572,
+              "glyphs" : [
+                {
+                  "advance" : 53.136,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 21.238,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 17
+                }
+              ],
+              "range" : {
+                "length" : 18,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 651.572,
+          "coreTextX" : 65.61200000000002,
+          "maximumRunAdvanceDelta" : 0.0061249999999972715,
+          "range" : {
+            "length" : 18,
+            "location" : 0
+          },
+          "text" : "All I have needed ",
+          "widthDelta" : -0.0061249999999972715,
+          "xDelta" : 0.002625000000023192
+        },
+        {
+          "baselineDelta" : 0.394246936523416,
+          "chromiumBaselineY" : 284.804688,
+          "chromiumRuns" : [
+            {
+              "advance" : 546.859375,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 14,
+                "location" : 18
+              }
+            }
+          ],
+          "chromiumWidth" : 546.859375,
+          "chromiumX" : 117.96875,
+          "coreTextBaselineY" : 285.1989349365234,
+          "coreTextRuns" : [
+            {
+              "advance" : 546.8580000000001,
+              "glyphs" : [
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 47.068000000000005,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 27.306,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 31
+                }
+              ],
+              "range" : {
+                "length" : 14,
+                "location" : 18
+              }
+            }
+          ],
+          "coreTextWidth" : 546.8580000000001,
+          "coreTextX" : 117.969,
+          "maximumRunAdvanceDelta" : 0.0013749999999390639,
+          "range" : {
+            "length" : 14,
+            "location" : 18
+          },
+          "text" : "Your hand has ",
+          "widthDelta" : -0.0013749999999390639,
+          "xDelta" : 0.0002499999999940883
+        },
+        {
+          "baselineDelta" : 0.39893493652346024,
+          "chromiumBaselineY" : 375,
+          "chromiumRuns" : [
+            {
+              "advance" : 636.40625,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 18,
+                "location" : 32
+              }
+            }
+          ],
+          "chromiumWidth" : 636.40625,
+          "chromiumX" : 73.195313,
+          "coreTextBaselineY" : 375.39893493652346,
+          "coreTextRuns" : [
+            {
+              "advance" : 636.402,
+              "glyphs" : [
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 25.830000000000002,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 47.068000000000005,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 35
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 36
+                },
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 37
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 38
+                },
+                {
+                  "advance" : 48.626000000000005,
+                  "stringIndex" : 39
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 40
+                },
+                {
+                  "advance" : 47.068000000000005,
+                  "stringIndex" : 41
+                },
+                {
+                  "advance" : 25.830000000000002,
+                  "stringIndex" : 42
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 43
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 44
+                },
+                {
+                  "advance" : 25.830000000000002,
+                  "stringIndex" : 45
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 46
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 47
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 48
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 49
+                }
+              ],
+              "range" : {
+                "length" : 18,
+                "location" : 32
+              }
+            }
+          ],
+          "coreTextWidth" : 636.402,
+          "coreTextX" : 73.197,
+          "maximumRunAdvanceDelta" : 0.004249999999956344,
+          "range" : {
+            "length" : 18,
+            "location" : 32
+          },
+          "text" : "provided great is ",
+          "widthDelta" : -0.004249999999956344,
+          "xDelta" : 0.0016870000000039909
+        },
+        {
+          "baselineDelta" : 0.40362193652345013,
+          "chromiumBaselineY" : 465.195313,
+          "chromiumRuns" : [
+            {
+              "advance" : 604.429688,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 50
+              }
+            }
+          ],
+          "chromiumWidth" : 604.429688,
+          "chromiumX" : 77.78125,
+          "coreTextBaselineY" : 465.59893493652345,
+          "coreTextRuns" : [
+            {
+              "advance" : 604.422,
+              "glyphs" : [
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 50
+                },
+                {
+                  "advance" : 47.068000000000005,
+                  "stringIndex" : 51
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 52
+                },
+                {
+                  "advance" : 27.306,
+                  "stringIndex" : 53
+                },
+                {
+                  "advance" : 22.796,
+                  "stringIndex" : 54
+                },
+                {
+                  "advance" : 24.272000000000002,
+                  "stringIndex" : 55
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 56
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 57
+                },
+                {
+                  "advance" : 25.830000000000002,
+                  "stringIndex" : 58
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 59
+                },
+                {
+                  "advance" : 24.272000000000002,
+                  "stringIndex" : 60
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 61
+                },
+                {
+                  "advance" : 18.204,
+                  "stringIndex" : 62
+                },
+                {
+                  "advance" : 45.592,
+                  "stringIndex" : 63
+                },
+                {
+                  "advance" : 44.034,
+                  "stringIndex" : 64
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 65
+                },
+                {
+                  "advance" : 41,
+                  "stringIndex" : 66
+                }
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 50
+              }
+            }
+          ],
+          "coreTextWidth" : 604.422,
+          "coreTextX" : 77.78899999999999,
+          "maximumRunAdvanceDelta" : 0.007688000000030115,
+          "range" : {
+            "length" : 17,
+            "location" : 50
+          },
+          "text" : "Your faithfulness",
+          "widthDelta" : -0.007688000000030115,
+          "xDelta" : 0.007749999999987267
+        }
+      ],
+      "maximumBaselineDelta" : 0.40362193652345013,
+      "maximumHorizontalPositionDelta" : 0.007749999999987267,
+      "maximumLineWidthDelta" : 0.007688000000030115,
+      "maximumRunAdvanceDelta" : 0.007688000000030115,
+      "purpose" : "A single paragraph balanced across several visual lines",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : -0.49062500000002274,
+      "blockTopDelta" : 0.24531200000001263,
+      "chromiumBlockHeight" : 290.890625,
+      "chromiumBlockTop" : 64.554688,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 57.03125,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "A"
+        },
+        {
+          "chromiumAdvance" : 75.070313,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 42.242188,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "z"
+        },
+        {
+          "chromiumAdvance" : 19.546875,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 50.515625,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 24.476563,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 53.773438,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 1,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 34.234375,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 1,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 50.523438,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 1,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 50.523438,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 1,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 50.515625,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 1,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 2,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 50.515625,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 2,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 2,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 44,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 2,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 2,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 47.257813,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 27.726563,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 2,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 24.476563,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 27.726563,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 2,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 2,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 47.257813,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 24.476563,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 44.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 2,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 50.515625,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 2,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 2,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 2,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 52.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 2,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 24.476563,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 27.726563,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 2,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 2,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 36
+          },
+          "runIndex" : 2,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 27.726563,
+          "range" : {
+            "length" : 1,
+            "location" : 37
+          },
+          "runIndex" : 2,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 38
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 44,
+          "range" : {
+            "length" : 1,
+            "location" : 39
+          },
+          "runIndex" : 2,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 47.257813,
+          "range" : {
+            "length" : 1,
+            "location" : 40
+          },
+          "runIndex" : 2,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 44.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 41
+          },
+          "runIndex" : 2,
+          "text" : "v"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 42
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 52.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 43
+          },
+          "runIndex" : 2,
+          "text" : "d"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 44
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 45
+          },
+          "runIndex" : 2,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 46
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 66.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 47
+          },
+          "runIndex" : 2,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 28.523438,
+          "range" : {
+            "length" : 1,
+            "location" : 48
+          },
+          "runIndex" : 2,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 46.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 49
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 27.726563,
+          "range" : {
+            "length" : 1,
+            "location" : 50
+          },
+          "runIndex" : 2,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 51
+          },
+          "runIndex" : 2,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 48.9375,
+          "range" : {
+            "length" : 1,
+            "location" : 52
+          },
+          "runIndex" : 2,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 24.46875,
+          "range" : {
+            "length" : 1,
+            "location" : 53
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 19.546875,
+          "range" : {
+            "length" : 1,
+            "location" : 54
+          },
+          "runIndex" : 2,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 19.539063,
+          "range" : {
+            "length" : 1,
+            "location" : 55
+          },
+          "runIndex" : 2,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 45.6875,
+          "range" : {
+            "length" : 1,
+            "location" : 56
+          },
+          "runIndex" : 2,
+          "text" : "k"
+        },
+        {
+          "chromiumAdvance" : 47.257813,
+          "range" : {
+            "length" : 1,
+            "location" : 57
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 24.476563,
+          "range" : {
+            "length" : 1,
+            "location" : 58
+          },
+          "runIndex" : 2,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 75.070313,
+          "range" : {
+            "length" : 1,
+            "location" : 59
+          },
+          "runIndex" : 2,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 47.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 60
+          },
+          "runIndex" : 2,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue",
+        "HelveticaNeue-Bold"
+      ],
+      "coreTextBlockHeight" : 290.4,
+      "coreTextBlockTop" : 64.80000000000001,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue",
+        "HelveticaNeue-Bold"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "rich-mixed-weight",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.4977900273437683,
+          "chromiumBaselineY" : 146.054688,
+          "chromiumRuns" : [
+            {
+              "advance" : 365.03125,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 8,
+                "location" : 0
+              }
+            },
+            {
+              "advance" : 239.539063,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 5,
+                "location" : 8
+              }
+            },
+            {
+              "advance" : 215.078125,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 5,
+                "location" : 13
+              }
+            }
+          ],
+          "chromiumWidth" : 819.648438,
+          "chromiumX" : 72.40625,
+          "coreTextBaselineY" : 146.55247802734377,
+          "coreTextRuns" : [
+            {
+              "advance" : 365.024,
+              "glyphs" : [
+                {
+                  "advance" : 57.023999999999994,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 75.064,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 42.239999999999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 19.535999999999998,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 7
+                }
+              ],
+              "range" : {
+                "length" : 8,
+                "location" : 0
+              }
+            },
+            {
+              "advance" : 239.536,
+              "glyphs" : [
+                {
+                  "advance" : 53.767999999999994,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 34.232,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 12
+                }
+              ],
+              "range" : {
+                "length" : 5,
+                "location" : 8
+              }
+            },
+            {
+              "advance" : 215.072,
+              "glyphs" : [
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 66.704,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 17
+                }
+              ],
+              "range" : {
+                "length" : 5,
+                "location" : 13
+              }
+            }
+          ],
+          "coreTextWidth" : 819.632,
+          "coreTextX" : 72.41600000000005,
+          "maximumRunAdvanceDelta" : 0.0072499999999990905,
+          "range" : {
+            "length" : 18,
+            "location" : 0
+          },
+          "text" : "Amazing grace how ",
+          "widthDelta" : -0.016438000000107422,
+          "xDelta" : 0.00975000000005366
+        },
+        {
+          "baselineDelta" : -0.3356328242187203,
+          "chromiumBaselineY" : 242.851563,
+          "chromiumRuns" : [
+            {
+              "advance" : 850.882813,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 21,
+                "location" : 18
+              }
+            }
+          ],
+          "chromiumWidth" : 850.882813,
+          "chromiumX" : 56.789063,
+          "coreTextBaselineY" : 242.51593017578128,
+          "coreTextRuns" : [
+            {
+              "advance" : 850.8719999999998,
+              "glyphs" : [
+                {
+                  "advance" : 44,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 66.704,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 44,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 50.512,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 52.184,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 35
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 36
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 37
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 38
+                }
+              ],
+              "range" : {
+                "length" : 21,
+                "location" : 18
+              }
+            }
+          ],
+          "coreTextWidth" : 850.8719999999998,
+          "coreTextX" : 56.79600000000005,
+          "maximumRunAdvanceDelta" : 0.010813000000212014,
+          "range" : {
+            "length" : 21,
+            "location" : 18
+          },
+          "text" : "sweet the sound that ",
+          "widthDelta" : -0.010813000000212014,
+          "xDelta" : 0.006937000000050375
+        },
+        {
+          "baselineDelta" : -0.33250782421873737,
+          "chromiumBaselineY" : 339.648438,
+          "chromiumRuns" : [
+            {
+              "advance" : 899.71875,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 22,
+                "location" : 39
+              }
+            }
+          ],
+          "chromiumWidth" : 899.71875,
+          "chromiumX" : 20.140625,
+          "coreTextBaselineY" : 339.31593017578126,
+          "coreTextRuns" : [
+            {
+              "advance" : 899.7119999999999,
+              "glyphs" : [
+                {
+                  "advance" : 44,
+                  "stringIndex" : 39
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 40
+                },
+                {
+                  "advance" : 44,
+                  "stringIndex" : 41
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 42
+                },
+                {
+                  "advance" : 52.184,
+                  "stringIndex" : 43
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 44
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 45
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 46
+                },
+                {
+                  "advance" : 66.704,
+                  "stringIndex" : 47
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 48
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 49
+                },
+                {
+                  "advance" : 27.72,
+                  "stringIndex" : 50
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 51
+                },
+                {
+                  "advance" : 48.928,
+                  "stringIndex" : 52
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 53
+                },
+                {
+                  "advance" : 19.535999999999998,
+                  "stringIndex" : 54
+                },
+                {
+                  "advance" : 19.535999999999998,
+                  "stringIndex" : 55
+                },
+                {
+                  "advance" : 45.672,
+                  "stringIndex" : 56
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 57
+                },
+                {
+                  "advance" : 24.464,
+                  "stringIndex" : 58
+                },
+                {
+                  "advance" : 75.064,
+                  "stringIndex" : 59
+                },
+                {
+                  "advance" : 47.256,
+                  "stringIndex" : 60
+                }
+              ],
+              "range" : {
+                "length" : 22,
+                "location" : 39
+              }
+            }
+          ],
+          "coreTextWidth" : 899.7119999999999,
+          "coreTextX" : 20.144000000000062,
+          "maximumRunAdvanceDelta" : 0.006750000000124601,
+          "range" : {
+            "length" : 22,
+            "location" : 39
+          },
+          "text" : "saved a wretch like me",
+          "widthDelta" : -0.006750000000124601,
+          "xDelta" : 0.0033750000000623004
+        }
+      ],
+      "maximumBaselineDelta" : 0.4977900273437683,
+      "maximumHorizontalPositionDelta" : 0.00975000000005366,
+      "maximumLineWidthDelta" : 0.016438000000107422,
+      "maximumRunAdvanceDelta" : 0.010813000000212014,
+      "purpose" : "Visual lines crossing stable rich-text run boundaries",
+      "richRunCount" : 3
+    },
+    {
+      "blockHeightDelta" : 0.012500000000045475,
+      "blockTopDelta" : -0.006250000000022737,
+      "chromiumBlockHeight" : 189.1875,
+      "chromiumBlockTop" : 85.40625,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 74.90625,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "M"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.828125,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 51.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "b"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "y"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 65.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 23.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.359375,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 27.867188,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 45.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 22.28125,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : "I"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 189.20000000000005,
+      "coreTextBlockTop" : 85.39999999999998,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "alignment-left",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.07068176269530113,
+          "chromiumBaselineY" : 164.40625,
+          "chromiumRuns" : [
+            {
+              "advance" : 801.273438,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 801.273438,
+          "chromiumX" : 0,
+          "coreTextBaselineY" : 164.4769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 801.2620000000001,
+              "glyphs" : [
+                {
+                  "advance" : 74.90599999999999,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 50.998,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 18
+                }
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 801.2620000000001,
+          "coreTextX" : 0,
+          "maximumRunAdvanceDelta" : 0.011437999999998283,
+          "range" : {
+            "length" : 19,
+            "location" : 0
+          },
+          "text" : "Morning by morning ",
+          "widthDelta" : -0.011437999999998283,
+          "xDelta" : 0
+        },
+        {
+          "baselineDelta" : 0.07693176269532387,
+          "chromiumBaselineY" : 259,
+          "chromiumRuns" : [
+            {
+              "advance" : 689.640625,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "chromiumWidth" : 689.640625,
+          "chromiumX" : 0,
+          "coreTextBaselineY" : 259.0769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 689.634,
+              "glyphs" : [
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 65.18799999999999,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 27.09,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 22.273999999999997,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 35
+                }
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "coreTextWidth" : 689.634,
+          "coreTextX" : 0,
+          "maximumRunAdvanceDelta" : 0.006624999999985448,
+          "range" : {
+            "length" : 17,
+            "location" : 19
+          },
+          "text" : "new mercies I see",
+          "widthDelta" : -0.006624999999985448,
+          "xDelta" : 0
+        }
+      ],
+      "maximumBaselineDelta" : 0.07693176269532387,
+      "maximumHorizontalPositionDelta" : 0,
+      "maximumLineWidthDelta" : 0.011437999999998283,
+      "maximumRunAdvanceDelta" : 0.011437999999998283,
+      "purpose" : "Left-aligned FreeShow normal wrapping",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.012500000000045475,
+      "blockTopDelta" : -0.006250000000022737,
+      "chromiumBlockHeight" : 189.1875,
+      "chromiumBlockTop" : 85.40625,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 74.90625,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "M"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.828125,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 51.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "b"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "y"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 65.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 23.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.359375,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 27.867188,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 45.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 22.28125,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : "I"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 189.20000000000005,
+      "coreTextBlockTop" : 85.39999999999998,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "alignment-center",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.07068176269530113,
+          "chromiumBaselineY" : 164.40625,
+          "chromiumRuns" : [
+            {
+              "advance" : 801.273438,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 801.273438,
+          "chromiumX" : 61.320313,
+          "coreTextBaselineY" : 164.4769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 801.2620000000001,
+              "glyphs" : [
+                {
+                  "advance" : 74.90599999999999,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 50.998,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 18
+                }
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 801.2620000000001,
+          "coreTextX" : 61.32299999999998,
+          "maximumRunAdvanceDelta" : 0.011437999999998283,
+          "range" : {
+            "length" : 19,
+            "location" : 0
+          },
+          "text" : "Morning by morning ",
+          "widthDelta" : -0.011437999999998283,
+          "xDelta" : 0.002686999999980344
+        },
+        {
+          "baselineDelta" : 0.07693176269532387,
+          "chromiumBaselineY" : 259,
+          "chromiumRuns" : [
+            {
+              "advance" : 689.640625,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "chromiumWidth" : 689.640625,
+          "chromiumX" : 105.179688,
+          "coreTextBaselineY" : 259.0769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 689.634,
+              "glyphs" : [
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 65.18799999999999,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 27.09,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 22.273999999999997,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 35
+                }
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "coreTextWidth" : 689.634,
+          "coreTextX" : 105.18299999999999,
+          "maximumRunAdvanceDelta" : 0.006624999999985448,
+          "range" : {
+            "length" : 17,
+            "location" : 19
+          },
+          "text" : "new mercies I see",
+          "widthDelta" : -0.006624999999985448,
+          "xDelta" : 0.0033119999999939864
+        }
+      ],
+      "maximumBaselineDelta" : 0.07693176269532387,
+      "maximumHorizontalPositionDelta" : 0.0033119999999939864,
+      "maximumLineWidthDelta" : 0.011437999999998283,
+      "maximumRunAdvanceDelta" : 0.011437999999998283,
+      "purpose" : "Centered balanced wrapping",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.012500000000045475,
+      "blockTopDelta" : -0.006250000000022737,
+      "chromiumBlockHeight" : 189.1875,
+      "chromiumBlockTop" : 85.40625,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 74.90625,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "M"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.59375,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.828125,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 51.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : "b"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "y"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 29.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 48.601563,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 49.375,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "g"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 47.820313,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 65.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "w"
+        },
+        {
+          "chromiumAdvance" : 23.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 73.359375,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "m"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 27.867188,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 45.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 26
+          },
+          "runIndex" : 0,
+          "text" : "c"
+        },
+        {
+          "chromiumAdvance" : 19.101563,
+          "range" : {
+            "length" : 1,
+            "location" : 27
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 28
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 29
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 30
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 22.28125,
+          "range" : {
+            "length" : 1,
+            "location" : 31
+          },
+          "runIndex" : 0,
+          "text" : "I"
+        },
+        {
+          "chromiumAdvance" : 23.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 32
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 43.007813,
+          "range" : {
+            "length" : 1,
+            "location" : 33
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 46.1875,
+          "range" : {
+            "length" : 1,
+            "location" : 34
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 46.195313,
+          "range" : {
+            "length" : 1,
+            "location" : 35
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 189.20000000000005,
+      "coreTextBlockTop" : 85.39999999999998,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "alignment-right",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.07068176269530113,
+          "chromiumBaselineY" : 164.40625,
+          "chromiumRuns" : [
+            {
+              "advance" : 801.273438,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 801.273438,
+          "chromiumX" : 122.640625,
+          "coreTextBaselineY" : 164.4769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 801.2620000000001,
+              "glyphs" : [
+                {
+                  "advance" : 74.90599999999999,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 50.998,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 30.185999999999996,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 49.364,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 18
+                }
+              ],
+              "range" : {
+                "length" : 19,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 801.2620000000001,
+          "coreTextX" : 122.64599999999996,
+          "maximumRunAdvanceDelta" : 0.011437999999998283,
+          "range" : {
+            "length" : 19,
+            "location" : 0
+          },
+          "text" : "Morning by morning ",
+          "widthDelta" : -0.011437999999998283,
+          "xDelta" : 0.005374999999958163
+        },
+        {
+          "baselineDelta" : 0.07693176269532387,
+          "chromiumBaselineY" : 259,
+          "chromiumRuns" : [
+            {
+              "advance" : 689.640625,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "chromiumWidth" : 689.640625,
+          "chromiumX" : 210.359375,
+          "coreTextBaselineY" : 259.0769317626953,
+          "coreTextRuns" : [
+            {
+              "advance" : 689.634,
+              "glyphs" : [
+                {
+                  "advance" : 47.815999999999995,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 65.18799999999999,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 73.35799999999999,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 27.09,
+                  "stringIndex" : 25
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 26
+                },
+                {
+                  "advance" : 19.092,
+                  "stringIndex" : 27
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 28
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 29
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 30
+                },
+                {
+                  "advance" : 22.273999999999997,
+                  "stringIndex" : 31
+                },
+                {
+                  "advance" : 23.907999999999998,
+                  "stringIndex" : 32
+                },
+                {
+                  "advance" : 43,
+                  "stringIndex" : 33
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 34
+                },
+                {
+                  "advance" : 46.181999999999995,
+                  "stringIndex" : 35
+                }
+              ],
+              "range" : {
+                "length" : 17,
+                "location" : 19
+              }
+            }
+          ],
+          "coreTextWidth" : 689.634,
+          "coreTextX" : 210.36599999999999,
+          "maximumRunAdvanceDelta" : 0.006624999999985448,
+          "range" : {
+            "length" : 17,
+            "location" : 19
+          },
+          "text" : "new mercies I see",
+          "widthDelta" : -0.006624999999985448,
+          "xDelta" : 0.006624999999985448
+        }
+      ],
+      "maximumBaselineDelta" : 0.07693176269532387,
+      "maximumHorizontalPositionDelta" : 0.006624999999985448,
+      "maximumLineWidthDelta" : 0.011437999999998283,
+      "maximumRunAdvanceDelta" : 0.011437999999998283,
+      "purpose" : "Right-aligned balanced wrapping",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.004687000000018315,
+      "blockTopDelta" : 0.0015624999999914735,
+      "chromiumBlockHeight" : 127.835938,
+      "chromiumBlockTop" : 46.078125,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 88.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "G"
+        },
+        {
+          "chromiumAdvance" : 37.664063,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 61.367188,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 36.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 25.8125,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 58.109375,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 32.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 68.867188,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "Y"
+        },
+        {
+          "chromiumAdvance" : 60.265625,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 64.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 38.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 34.40625,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 62.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 25.804688,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 36.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 64.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 34.40625,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 64.617188,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 25.8125,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 64.625,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 58.117188,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 58.109375,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "coreTextBlockHeight" : 127.84062500000002,
+      "coreTextBlockTop" : 46.07968749999999,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "weight-regular",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : 0.3646109104156494,
+          "chromiumBaselineY" : 152.578125,
+          "chromiumRuns" : [
+            {
+              "advance" : 1291.382813,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 1291.382813,
+          "chromiumX" : 54.304688,
+          "coreTextBaselineY" : 152.94273591041565,
+          "coreTextRuns" : [
+            {
+              "advance" : 1291.4227500000002,
+              "glyphs" : [
+                {
+                  "advance" : 88.21003125,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 36.60890625,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 36.60890625,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 25.800562499999998,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 58.109375,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 64.617625,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 34.40075,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 25.800562499999998,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 36.60890625,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 64.617625,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 34.40075,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 64.617625,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 25.800562499999998,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 64.617625,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 58.109375,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 58.109375,
+                  "stringIndex" : 25
+                }
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 1291.4227500000002,
+          "coreTextX" : 54.28862499999991,
+          "maximumRunAdvanceDelta" : 0.03993700000023637,
+          "range" : {
+            "length" : 26,
+            "location" : 0
+          },
+          "text" : "Great is Your faithfulness",
+          "widthDelta" : 0.03993700000023637,
+          "xDelta" : -0.016063000000087868
+        }
+      ],
+      "maximumBaselineDelta" : 0.3646109104156494,
+      "maximumHorizontalPositionDelta" : 0.016063000000087868,
+      "maximumLineWidthDelta" : 0.03993700000023637,
+      "maximumRunAdvanceDelta" : 0.03993700000023637,
+      "purpose" : "Regular weight control",
+      "richRunCount" : 1
+    },
+    {
+      "blockHeightDelta" : 0.004687000000018315,
+      "blockTopDelta" : 0.0015624999999914735,
+      "chromiumBlockHeight" : 127.835938,
+      "chromiumBlockTop" : 46.078125,
+      "chromiumGraphemes" : [
+        {
+          "chromiumAdvance" : 88.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 0
+          },
+          "runIndex" : 0,
+          "text" : "G"
+        },
+        {
+          "chromiumAdvance" : 44.171875,
+          "range" : {
+            "length" : 1,
+            "location" : 1
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 65.664063,
+          "range" : {
+            "length" : 1,
+            "location" : 2
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 3
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 40.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 4
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 32.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 5
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 29.984375,
+          "range" : {
+            "length" : 1,
+            "location" : 6
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 62.421875,
+          "range" : {
+            "length" : 1,
+            "location" : 7
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 32.3125,
+          "range" : {
+            "length" : 1,
+            "location" : 8
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 71.070313,
+          "range" : {
+            "length" : 1,
+            "location" : 9
+          },
+          "runIndex" : 0,
+          "text" : "Y"
+        },
+        {
+          "chromiumAdvance" : 64.570313,
+          "range" : {
+            "length" : 1,
+            "location" : 10
+          },
+          "runIndex" : 0,
+          "text" : "o"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 11
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 45.210938,
+          "range" : {
+            "length" : 1,
+            "location" : 12
+          },
+          "runIndex" : 0,
+          "text" : "r"
+        },
+        {
+          "chromiumAdvance" : 32.320313,
+          "range" : {
+            "length" : 1,
+            "location" : 13
+          },
+          "runIndex" : 0,
+          "text" : " "
+        },
+        {
+          "chromiumAdvance" : 38.703125,
+          "range" : {
+            "length" : 1,
+            "location" : 14
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 15
+          },
+          "runIndex" : 0,
+          "text" : "a"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 16
+          },
+          "runIndex" : 0,
+          "text" : "i"
+        },
+        {
+          "chromiumAdvance" : 40.914063,
+          "range" : {
+            "length" : 1,
+            "location" : 17
+          },
+          "runIndex" : 0,
+          "text" : "t"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 18
+          },
+          "runIndex" : 0,
+          "text" : "h"
+        },
+        {
+          "chromiumAdvance" : 38.710938,
+          "range" : {
+            "length" : 1,
+            "location" : 19
+          },
+          "runIndex" : 0,
+          "text" : "f"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 20
+          },
+          "runIndex" : 0,
+          "text" : "u"
+        },
+        {
+          "chromiumAdvance" : 29.992188,
+          "range" : {
+            "length" : 1,
+            "location" : 21
+          },
+          "runIndex" : 0,
+          "text" : "l"
+        },
+        {
+          "chromiumAdvance" : 68.921875,
+          "range" : {
+            "length" : 1,
+            "location" : 22
+          },
+          "runIndex" : 0,
+          "text" : "n"
+        },
+        {
+          "chromiumAdvance" : 66.71875,
+          "range" : {
+            "length" : 1,
+            "location" : 23
+          },
+          "runIndex" : 0,
+          "text" : "e"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 24
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        },
+        {
+          "chromiumAdvance" : 62.414063,
+          "range" : {
+            "length" : 1,
+            "location" : 25
+          },
+          "runIndex" : 0,
+          "text" : "s"
+        }
+      ],
+      "chromiumPostScriptNames" : [
+        "HelveticaNeue-Bold"
+      ],
+      "coreTextBlockHeight" : 127.84062500000002,
+      "coreTextBlockTop" : 46.07968749999999,
+      "coreTextPostScriptNames" : [
+        "HelveticaNeue-Bold"
+      ],
+      "fontFacesMatch" : true,
+      "id" : "weight-bold",
+      "lineBreaksMatch" : true,
+      "lines" : [
+        {
+          "baselineDelta" : -0.030587434768676758,
+          "chromiumBaselineY" : 154.078125,
+          "chromiumRuns" : [
+            {
+              "advance" : 1387.960938,
+              "glyphs" : [
+
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "chromiumWidth" : 1387.960938,
+          "chromiumX" : 6.015625,
+          "coreTextBaselineY" : 154.04753756523132,
+          "coreTextRuns" : [
+            {
+              "advance" : 1388.0005312499998,
+              "glyphs" : [
+                {
+                  "advance" : 88.21003125,
+                  "stringIndex" : 0
+                },
+                {
+                  "advance" : 43.11715625,
+                  "stringIndex" : 1
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 2
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 3
+                },
+                {
+                  "advance" : 40.909,
+                  "stringIndex" : 4
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 5
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 6
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 7
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 8
+                },
+                {
+                  "advance" : 64.61762499999999,
+                  "stringIndex" : 9
+                },
+                {
+                  "advance" : 71.00965624999999,
+                  "stringIndex" : 10
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 11
+                },
+                {
+                  "advance" : 45.20909375,
+                  "stringIndex" : 12
+                },
+                {
+                  "advance" : 32.3088125,
+                  "stringIndex" : 13
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 14
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 15
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 16
+                },
+                {
+                  "advance" : 40.909,
+                  "stringIndex" : 17
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 18
+                },
+                {
+                  "advance" : 38.70084375,
+                  "stringIndex" : 19
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 20
+                },
+                {
+                  "advance" : 29.9844375,
+                  "stringIndex" : 21
+                },
+                {
+                  "advance" : 68.91771874999999,
+                  "stringIndex" : 22
+                },
+                {
+                  "advance" : 66.7095625,
+                  "stringIndex" : 23
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 24
+                },
+                {
+                  "advance" : 62.409468749999995,
+                  "stringIndex" : 25
+                }
+              ],
+              "range" : {
+                "length" : 26,
+                "location" : 0
+              }
+            }
+          ],
+          "coreTextWidth" : 1388.0005312499998,
+          "coreTextX" : 5.999734375000116,
+          "maximumRunAdvanceDelta" : 0.039593249999825275,
+          "range" : {
+            "length" : 26,
+            "location" : 0
+          },
+          "text" : "Great is Your faithfulness",
+          "widthDelta" : 0.039593249999825275,
+          "xDelta" : -0.015890624999883585
+        }
+      ],
+      "maximumBaselineDelta" : 0.030587434768676758,
+      "maximumHorizontalPositionDelta" : 0.015890624999883585,
+      "maximumLineWidthDelta" : 0.039593249999825275,
+      "maximumRunAdvanceDelta" : 0.039593249999825275,
+      "purpose" : "Bold weight control",
+      "richRunCount" : 1
+    }
+  ],
+  "gate" : {
+    "baselineTolerance" : 0.75,
+    "blockTolerance" : 0.55,
+    "horizontalPositionTolerance" : 0.25,
+    "lineWidthTolerance" : 0.25,
+    "passed" : true,
+    "runAdvanceTolerance" : 0.25
+  },
+  "generatedAt" : "2026-08-11T17:09:51Z",
+  "runtime" : {
+    "architecture" : "arm64",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "renderer" : "CoreText/CoreGraphics"
+  }
+}

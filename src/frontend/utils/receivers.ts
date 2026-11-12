@@ -129,7 +129,10 @@ const receiveOUTPUTasMAIN: any = {
             })
 
             // only enabled ones & not invisible
-            a = a.filter((state) => get(outputs)[state.id]?.enabled && !get(outputs)[state.id]?.invisible)
+            a = a.filter((state) => {
+                const output = get(outputs)[state.id]
+                return output?.enabled && !output?.invisible && !(output.scrim && output.scrimOnly && !output.stageOutput)
+            })
 
             const getVisibleState = [...new Set(a.filter((state) => typeof state.active === "boolean").map((state) => state.active) as boolean[])]
             if (getVisibleState.length === 1) outputDisplay.set(getVisibleState[0])

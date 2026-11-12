@@ -420,13 +420,13 @@ function getPermission(id: "camera" | "microphone" | "screen") {
     else systemPreferences.askForMediaAccess(id)
 }
 
-function getScreens(type: "window" | "screen" = "screen"): Promise<{ name: string; id: string }[]> {
+function getScreens(type: "window" | "screen" = "screen"): Promise<{ name: string; id: string; displayId?: string }[]> {
     return new Promise((resolve) => {
         desktopCapturer
             .getSources({ types: [type] })
             .then((sources) => {
-                let screens: { name: string; id: string }[] = []
-                sources.map((source) => screens.push({ name: source.name, id: source.id }))
+                let screens: { name: string; id: string; displayId?: string }[] = []
+                sources.map((source) => screens.push({ name: source.name, id: source.id, displayId: source.display_id }))
                 if (type === "window") screens = addFreeShowWindows(screens, sources)
 
                 resolve(screens)

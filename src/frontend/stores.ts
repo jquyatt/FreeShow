@@ -397,8 +397,8 @@ export const timeline: Writable<{ startTime?: number }> = writable({}) // {}
 export const timecode: Writable<{ type?: "send" | "receive"; mode?: TimecodeMode; framerate?: number; offset?: number; audioOutput?: string; audioInput?: string; midiOutput?: string; midiInput?: string }> = writable({}) // {}
 
 // CONNECTIONS
-export const ports: Writable<{ [key: string]: number }> = writable({ remote: 5510, stage: 5511, controller: 5512, output_stream: 5513 }) // {default}
-export const disabledServers: Writable<any> = writable({ remote: false, stage: false, controller: true, output_stream: true }) // {}
+export const ports: Writable<{ [key: string]: number }> = writable({ remote: 5510, stage: 5511, controller: 5512, output_stream: 5513, scrim: 5514 }) // {default}
+export const disabledServers: Writable<any> = writable({ remote: false, stage: false, controller: true, output_stream: true, scrim: true }) // {}
 export const serverData: Writable<{ [key: string]: ServerData }> = writable({}) // {}
 export const maxConnections: Writable<number> = writable(10) // 10
 export const contentProviderData: Writable<{ [key in ContentProviderId]?: any }> = writable({}) // {}

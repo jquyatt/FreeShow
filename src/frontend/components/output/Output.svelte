@@ -14,6 +14,7 @@
     import { defaultLayers, getCurrentStyle, getMetadata, getOutputLines, getOutputTransitions, getResolution, getSlideFilter, getStyleTemplate, setTemplateStyle } from "../helpers/output"
     import { _show } from "../helpers/shows"
     import Image from "../media/Image.svelte"
+    import Textbox from "../slide/Textbox.svelte"
     import Zoomed from "../slide/Zoomed.svelte"
     import { updateAnimation } from "./animation"
     import EffectOutput from "./effects/EffectOutput.svelte"
@@ -30,6 +31,7 @@
     export let ratio = 0
     export let mirror = false
     export let preview = false
+    export let measurementOnly = false
     export let styleIdOverride = ""
     export let outOverride: OutData | null = null
 
@@ -230,16 +232,53 @@
     const getStyleTemplateData = () => (styleTemplate = getStyleTemplate(slide!, currentStyle))
     $: templateBackground = styleTemplate?.settings?.backgroundPath || ""
 
+    type FlywireTextPrecomputeSlide = {
+        outSlide: OutSlide
+        slideId: string
+        items: Item[]
+    }
+    let flywireTextPrecomputeSlides: FlywireTextPrecomputeSlide[] = []
+    $: flywireTextPrecomputeSlides = resolveFlywireTextPrecomputeSlides(slide, currentStyle, !!currentOutput?.scrim)
+
+    function resolveFlywireTextPrecomputeSlides(activeSlide: OutSlide | null, style: Styles, scrimEnabled: boolean): FlywireTextPrecomputeSlide[] {
+        if (($currentWindow !== "output" && !measurementOnly) || preview || !scrimEnabled || !activeSlide?.id || activeSlide.id === "temp" || activeSlide.id === "tempText") return []
+        const show = $showsCache[activeSlide.id]
+        if (!show) return []
+        const layoutId = activeSlide.layout || show.settings.activeLayout
+        const layout = show.layouts?.[layoutId]?.slides || []
+        const currentIndex = activeSlide.index ?? -1
+        if (currentIndex < 0) return []
+
+        return [1, 2, 3, -1].flatMap((offset) => {
+            const index = currentIndex + offset
+            const layoutRef = layout[index]
+            const sourceSlide = layoutRef?.id ? show.slides?.[layoutRef.id] : null
+            if (!sourceSlide?.items?.some((item) => (item?.type || "text") === "text")) return []
+            const adjacentOutSlide = { ...activeSlide, layout: layoutId, index }
+            const items = setTemplateStyle(adjacentOutSlide, style, clone(sourceSlide.items), outputId, sourceSlide.customDynamicValues)
+            return [{ outSlide: adjacentOutSlide, slideId: layoutRef.id, items }]
+        })
+    }
+
     // lines
-    let lines: { [key: string]: { start: number | null; end: number | null; linesStart?: number | null; linesEnd?: number | null; clickRevealed?: boolean } } = {}
+    let lines: {
+        [key: string]: {
+            start: number | null
+            end: number | null
+            linesStart?: number | null
+            linesEnd?: number | null
+            clickRevealed?: boolean
+        }
+    } = {}
     $: currentLineId = slide?.id
     const updateLinesTime = $currentWindow === "output" ? 50 : 10
     let linesTimeout: NodeJS.Timeout | null = null
     $: if (currentLineId) {
         // don't update until all outputs has updated their "line" value
         if (linesTimeout) clearTimeout(linesTimeout)
+        const lineId = currentLineId
         linesTimeout = setTimeout(() => {
-            lines[currentLineId] = getOutputLines(slide!, currentStyle.lines) // , currentSlide
+            lines[lineId] = getOutputLines(slide!, currentStyle.lines) // , currentSlide
         }, updateLinesTime)
     }
 
@@ -329,8 +368,16 @@
     $: backgroundColor = currentOutput?.transparent ? "transparent" : styleTemplate?.settings?.backgroundColor || currentSlide?.settings?.color || currentStyle?.background || slide?.settings?.backgroundColor || "black"
     // background image
     $: styleBackground = currentStyle?.clearStyleBackgroundOnText && (slide || background) ? "" : currentStyle?.backgroundImage || ""
-    $: styleBackgroundData = { path: styleBackground, ...($media[styleBackground] || {}), loop: true }
-    $: templateBackgroundData = { path: templateBackground, loop: true, ...($media[templateBackground] || {}) }
+    $: styleBackgroundData = {
+        path: styleBackground,
+        ...($media[styleBackground] || {}),
+        loop: true
+    }
+    $: templateBackgroundData = {
+        path: templateBackground,
+        loop: true,
+        ...($media[templateBackground] || {})
+    }
     $: backgroundData = templateBackground ? templateBackgroundData : background
 
     // remove slide transition when replaced by "foreground" media (drawn below slide)
@@ -388,7 +435,7 @@
 
 <Zoomed id={outputId} background={backgroundColor} checkered={(preview || mirror) && backgroundColor === "transparent"} backgroundDuration={transitions.media?.type === "none" ? 0 : (transitions.media?.duration ?? 800)} align={alignPosition} center {style} {resolution} styleIdOverride={styleId} {mirror} {drawZoom} {cropping} bind:ratio>
     <!-- always show style background (behind other backgrounds) -->
-    {#if styleBackground && actualSlide?.type !== "pdf"}
+    {#if !measurementOnly && styleBackground && actualSlide?.type !== "pdf"}
         <Background data={styleBackgroundData} {outputId} transition={transitions.media} {currentStyle} {slideFilter} {ratio} animationStyle={animationData.style?.background || ""} mirror />
     {/if}
 
@@ -398,70 +445,120 @@
     {/if}
 
     <!-- background -->
-    {#if (backgroundData?.ignoreLayer ? layers.includes("slide") : layers.includes("background")) && !sceneHideLayers && backgroundData}
+    {#if !measurementOnly && (backgroundData?.ignoreLayer ? layers.includes("slide") : layers.includes("background")) && !sceneHideLayers && backgroundData}
         <Background data={backgroundData} {outputId} transition={transitions.media} {currentStyle} {slideFilter} {ratio} animationStyle={animationData.style?.background || ""} {mirror} />
     {/if}
 
     <!-- colorbars for testing -->
-    {#if $colorbars[outputId]}
+    {#if !measurementOnly && $colorbars[outputId]}
         <Image path="./assets/{$colorbars[outputId]}" mediaStyle={{ rendering: "pixelated", fit: "fill" }} />
     {/if}
 
     <!-- effects -->
-    {#if effectsUnderSlide && layers.includes("overlays")}
+    {#if !measurementOnly && effectsUnderSlide && layers.includes("overlays")}
         <EffectOutput ids={effectsUnderSlide} transition={transitions.overlay} {mirror} />
     {/if}
 
     <!-- "underlays" -->
-    {#if overlaysActive}
+    {#if !measurementOnly && overlaysActive}
         <!-- && outUnderlays?.length -->
         <Overlays {outputId} overlays={clonedOverlays} activeOverlays={outUnderlays} transition={transitions.overlay} {mirror} {preview} styleIdOverride={styleIdOverride || sceneStyleId} />
     {/if}
 
     <!-- slide -->
-    {#if actualSlide?.type === "pdf" && layers.includes("background")}
+    {#if !measurementOnly && actualSlide?.type === "pdf" && layers.includes("background")}
         <span style="zoom: {1 / ratio};">
             <PdfOutput slide={actualSlide} {currentStyle} transition={slideMediaTransition} />
         </span>
-    {:else if actualSlide?.type === "ppt" && layers.includes("slide")}
+    {:else if !measurementOnly && actualSlide?.type === "ppt" && layers.includes("slide")}
         <span style="zoom: {1 / ratio};">
             {#if actualSlide?.screen?.id}
                 <Window id={actualSlide?.screen?.id} class="media" style="width: 100%;height: 100%;" />
             {/if}
         </span>
     {:else if actualSlide && actualSlide?.type !== "pdf"}
-        <SlideContent {outputId} outSlide={actualSlide} isClearing={isSlideClearing} slideData={actualSlideData} currentSlide={actualCurrentSlide} {currentStyle} {animationData} currentLineId={actualCurrentLineId} {lines} {ratio} {mirror} {preview} transition={textTransition} transitionEnabled={!mirror || preview} styleIdOverride={styleIdOverride || sceneStyleId} refreshCounter={slideRemountCounter} />
+        <SlideContent {outputId} outSlide={actualSlide} isClearing={isSlideClearing} slideData={actualSlideData} currentSlide={actualCurrentSlide} {currentStyle} {animationData} currentLineId={actualCurrentLineId} {lines} {ratio} {mirror} {preview} {measurementOnly} transition={textTransition} transitionEnabled={measurementOnly ? false : !mirror || preview} styleIdOverride={styleIdOverride || sceneStyleId} refreshCounter={slideRemountCounter} />
 
         <!-- metadata -->
-        <Overlay overlay={{ items: currentMetadataItems }} isClearing={isMetadataClearing || isSlideClearing} {outputId} transition={textTransition} styleIdOverride={styleIdOverride || sceneStyleId} />
+        {#if !measurementOnly}
+            <Overlay overlay={{ items: currentMetadataItems }} isClearing={isMetadataClearing || isSlideClearing} {outputId} transition={textTransition} styleIdOverride={styleIdOverride || sceneStyleId} />
+        {/if}
     {/if}
 
-    <!-- effects -->
-    {#if effectsOverSlide && layers.includes("overlays")}
-        <EffectOutput ids={effectsOverSlide} transition={transitions.overlay} {mirror} />
+    {#if !measurementOnly && layers.includes("overlays")}
+        <!-- effects -->
+        {#if effectsOverSlide}
+            <EffectOutput ids={effectsOverSlide} transition={transitions.overlay} {mirror} />
+        {/if}
     {/if}
 
     <!-- overlays -->
     <!-- outOverlays?.length -->
-    {#if overlaysActive}
+    {#if !measurementOnly && overlaysActive}
         <Overlays {outputId} overlays={clonedOverlays} activeOverlays={outOverlays} transition={transitions.overlay} {mirror} {preview} styleIdOverride={styleIdOverride || sceneStyleId} />
     {/if}
 
-    {#if actualSlide?.attributionString && layers.includes("slide")}
+    {#if !measurementOnly && actualSlide?.attributionString && layers.includes("slide")}
         {#if mirror}
-            <p class="attributionString">{actualSlide.attributionString.slice(0, 135)}</p>
+            <p class="attributionString">
+                {actualSlide.attributionString.slice(0, 135)}
+            </p>
         {:else}
-            <p class="attributionString" transition:custom={textTransition}>{actualSlide.attributionString.slice(0, 135)}</p>
+            <p class="attributionString" transition:custom={textTransition}>
+                {actualSlide.attributionString.slice(0, 135)}
+            </p>
         {/if}
     {/if}
 
     <!-- draw -->
-    {#if zoomActive}
+    {#if !measurementOnly && zoomActive}
         <Draw />
+    {/if}
+
+    <!-- Keep probes inside the real output styling context so inherited typography
+         (including output/template font family and effects) matches the live item. -->
+    {#if flywireTextPrecomputeSlides.length}
+        <div class="flywire-text-precompute" aria-hidden="true">
+            {#each flywireTextPrecomputeSlides as target (`${target.outSlide.id}:${target.outSlide.layout}:${target.outSlide.index}:${target.slideId}`)}
+                {#each target.items as item, itemIndex}
+                    {#if item && (item.type || "text") === "text"}
+                        <Textbox
+                            {item}
+                            {itemIndex}
+                            {ratio}
+                            {outputId}
+                            outputStyle={currentStyle}
+                            mirror={false}
+                            preview={false}
+                            {styleIdOverride}
+                            slideIndex={target.outSlide.index}
+                            ref={{
+                                type: "show",
+                                showId: target.outSlide.id,
+                                slideId: target.slideId,
+                                id: target.slideId,
+                                layoutId: target.outSlide.layout
+                            }}
+                        />
+                    {/if}
+                {/each}
+            {/each}
+        </div>
     {/if}
 </Zoomed>
 
 <style>
+    .flywire-text-precompute {
+        position: absolute;
+        top: -100000px;
+        left: -100000px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
     .attributionString {
         position: absolute;
         bottom: 15px;

@@ -2,7 +2,8 @@ import { ipcMain, type IpcMainEvent } from "electron"
 import type { Response } from "express"
 import express from "express"
 import http from "http"
-import { join } from "path"
+import { extname, isAbsolute, join } from "path"
+import { fileURLToPath } from "url"
 import { Server, type Socket } from "socket.io"
 import type { Main, MainSendPayloads } from "../types/IPC/Main"
 import type { Message, ServerData } from "../types/Socket"
@@ -13,7 +14,7 @@ import { toApp } from "./index"
 import { OutputHelper } from "./output/OutputHelper"
 import { doesPathExist } from "./utils/files"
 
-type ServerName = "REMOTE" | "STAGE" | "CONTROLLER" | "OUTPUT_STREAM"
+type ServerName = "REMOTE" | "STAGE" | "CONTROLLER" | "OUTPUT_STREAM" | "SCRIM"
 interface ServerValues {
     port: number
     server: http.Server
@@ -27,12 +28,16 @@ const serverPorts: { [key in ServerName]: number } = {
     REMOTE: 5510,
     STAGE: 5511,
     CONTROLLER: 5512,
-    OUTPUT_STREAM: 5513
+    OUTPUT_STREAM: 5513,
+    SCRIM: 5514
     // CAM: 5513,
 }
 
 const servers: { [key in ServerName]?: ServerValues } = {}
 const ioServers: { [key in ServerName]?: Server } = {}
+const scrimAssets = new Map<string, string>()
+// Flywire only ever needs media and fonts; refuse to serve anything else, whatever path a client registers
+const scrimAssetExtensions = new Set([".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".svg", ".mp4", ".m4v", ".mov", ".webm", ".mkv", ".ttf", ".otf", ".woff", ".woff2"])
 
 // STAGE clients with a visible "current output" mirror subscribe to frame pushes (renewed by heartbeat)
 // declared before createServers() below, which resets it when the STAGE server instance is (re)created
@@ -69,9 +74,22 @@ function createServerInstance(id: ServerName) {
     }
 
     // The join import from 'path' is still needed for this part
-    app.get("/", (_req, res: Response) => res.sendFile(join(__dirname, id.toLowerCase(), "index.html")))
-    // The join import from 'path' is still needed for this part
-    app.use(express.static(join(__dirname, id.toLowerCase())))
+    if (id === "SCRIM") {
+        app.get("/", (_req, res: Response) => res.json({ name: "Flywire", protocolVersion: 1 }))
+        app.get("/assets/:assetId", (req, res: Response) => {
+            const registeredPath = scrimAssets.get(req.params.assetId)
+            if (!registeredPath) return res.sendStatus(404)
+
+            let filePath = registeredPath
+            if (filePath.startsWith("file://")) filePath = fileURLToPath(filePath)
+            if (!isAbsolute(filePath) || !scrimAssetExtensions.has(extname(filePath).toLowerCase())) return res.sendStatus(404)
+            return res.sendFile(filePath)
+        })
+    } else {
+        app.get("/", (_req, res: Response) => res.sendFile(join(__dirname, id.toLowerCase(), "index.html")))
+        // The join import from 'path' is still needed for this part
+        app.use(express.static(join(__dirname, id.toLowerCase())))
+    }
 
     const io = new Server(server)
 
@@ -90,7 +108,11 @@ function createServerInstance(id: ServerName) {
     // RECEIVE CONNECTION FROM CLIENT
     io.on("connection", (socket) => {
         if (Object.keys(servers[id]!.connections).length >= servers[id]!.max) {
-            io.emit(id, { channel: "ERROR", id: "overLimit", data: servers[id]!.max })
+            io.emit(id, {
+                channel: "ERROR",
+                id: "overLimit",
+                data: servers[id]!.max
+            })
             socket.disconnect()
             return
         }
@@ -102,6 +124,13 @@ function createServerInstance(id: ServerName) {
 function registerIpcBridge(id: ServerName) {
     // SEND DATA FROM APP TO CLIENT (uses the current io instance via ioServers, so it survives server recreation)
     ipcMain.on(id, (_e: IpcMainEvent, msg: Message) => {
+        if (id === "SCRIM" && msg.channel === "REGISTER_ASSET") {
+            const assetId = msg.data?.assetId
+            const path = msg.data?.path
+            if (typeof assetId === "string" && typeof path === "string" && assetId.startsWith("asset-")) scrimAssets.set(assetId, path)
+            return
+        }
+
         const io = ioServers[id]
         if (!io) return
         if (msg?.id) io.to(msg.id).emit(id, msg)
@@ -126,7 +155,8 @@ export function startServers({ ports, max, disabled, data }: MainSendPayloads[Ma
 
         servers[id]!.data = data[id.toLowerCase()] || {}
 
-        servers[id]!.server.listen(servers[id]!.port, onStarted)
+        // Flywire serves local files, so it listens on loopback only
+        servers[id]!.server.listen(servers[id]!.port, id === "SCRIM" ? "127.0.0.1" : undefined, onStarted)
         servers[id]!.server.once("error", (err: Error) => {
             if ((err as any).code === "EADDRINUSE") {
                 servers[id]!.server.close()
@@ -219,10 +249,15 @@ function initialize(id: ServerName, socket: Socket) {
             if (window.isDestroyed()) return
 
             const bounds = window.getBounds()
-            toServer(id, { channel: "OUTPUT_FRAME", data: { frame, width: bounds.width, height: bounds.height } })
+            toServer(id, {
+                channel: "OUTPUT_FRAME",
+                data: { frame, width: bounds.width, height: bounds.height }
+            })
         } else if (msg) {
             if (id === "STAGE") updateStageStreamSubscription(socket.id, msg.channel)
-            toApp(id, msg)
+            // Flywire replies and subscriptions are socket-specific. Use the
+            // server-owned ID rather than trusting clients to echo it.
+            toApp(id, id === "SCRIM" ? { ...msg, id: socket.id } : msg)
         }
     })
 

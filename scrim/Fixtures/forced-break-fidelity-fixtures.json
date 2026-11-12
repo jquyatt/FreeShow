@@ -1,0 +1,102 @@
+{
+    "version": 1,
+    "fontFamily": "Helvetica Neue",
+    "lineHeight": 1.1,
+    "fixtures": [
+        {
+            "id": "plain-single-line",
+            "purpose": "Plain text on one visual line",
+            "frame": { "width": 1400, "height": 220 },
+            "fontSize": 116.21875,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "Grace and peace", "fontWeight": 400 }]
+        },
+        {
+            "id": "explicit-newline",
+            "purpose": "Two authored lines separated by an explicit newline",
+            "frame": { "width": 1400, "height": 360 },
+            "fontSize": 96,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "Amazing grace\nHow sweet the sound", "fontWeight": 400 }]
+        },
+        {
+            "id": "shrink-to-fit-balanced",
+            "purpose": "Blocking shrink-to-fit fixture with a balanced visual wrap",
+            "frame": { "width": 1400, "height": 500 },
+            "fontSize": 160,
+            "textFit": "shrinkToFit",
+            "alignment": "center",
+            "runs": [{ "text": "Great is Your faithfulness\nMorning by morning new mercies I see", "fontWeight": 700 }]
+        },
+        {
+            "id": "balanced-multiline",
+            "purpose": "A single paragraph balanced across several visual lines",
+            "frame": { "width": 760, "height": 600 },
+            "fontSize": 82,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "All I have needed Your hand has provided great is Your faithfulness", "fontWeight": 400 }]
+        },
+        {
+            "id": "rich-mixed-weight",
+            "purpose": "Visual lines crossing stable rich-text run boundaries",
+            "frame": { "width": 940, "height": 420 },
+            "fontSize": 88,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [
+                { "text": "Amazing ", "fontWeight": 400 },
+                { "text": "grace", "fontWeight": 700 },
+                { "text": " how sweet the sound that saved a wretch like me", "fontWeight": 400 }
+            ]
+        },
+        {
+            "id": "alignment-left",
+            "purpose": "Left-aligned FreeShow normal wrapping",
+            "frame": { "width": 900, "height": 360 },
+            "fontSize": 86,
+            "textFit": "none",
+            "alignment": "left",
+            "textWrap": "wrap",
+            "runs": [{ "text": "Morning by morning new mercies I see", "fontWeight": 400 }]
+        },
+        {
+            "id": "alignment-center",
+            "purpose": "Centered balanced wrapping",
+            "frame": { "width": 900, "height": 360 },
+            "fontSize": 86,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "Morning by morning new mercies I see", "fontWeight": 400 }]
+        },
+        {
+            "id": "alignment-right",
+            "purpose": "Right-aligned balanced wrapping",
+            "frame": { "width": 900, "height": 360 },
+            "fontSize": 86,
+            "textFit": "none",
+            "alignment": "right",
+            "runs": [{ "text": "Morning by morning new mercies I see", "fontWeight": 400 }]
+        },
+        {
+            "id": "weight-regular",
+            "purpose": "Regular weight control",
+            "frame": { "width": 1400, "height": 220 },
+            "fontSize": 116.21875,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "Great is Your faithfulness", "fontWeight": 400 }]
+        },
+        {
+            "id": "weight-bold",
+            "purpose": "Bold weight control",
+            "frame": { "width": 1400, "height": 220 },
+            "fontSize": 116.21875,
+            "textFit": "none",
+            "alignment": "center",
+            "runs": [{ "text": "Great is Your faithfulness", "fontWeight": 700 }]
+        }
+    ]
+}

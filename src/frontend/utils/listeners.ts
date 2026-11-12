@@ -5,6 +5,7 @@ import { midiInListen } from "../components/actions/midi"
 import { getAllActiveOutputIds, getAllNormalOutputs, updateSyncedOutputs } from "../components/helpers/output"
 import { loadShows } from "../components/helpers/setShow"
 import { getShowCacheId, syncCachedShows, updateCachedShow, updateCachedShows, updateShowsList } from "../components/helpers/show"
+import { initFlywirePublisher } from "../components/output/scrim/flywirePublisher"
 import {
     $,
     actions,
@@ -71,6 +72,7 @@ import { send } from "./request"
 import { arrayToObject, eachConnection, filterObjectArray, sendData, timedout } from "./sendData"
 
 export function storeSubscriber() {
+    initFlywirePublisher()
     shows.subscribe(async (data) => {
         if (await hasNewerUpdate("LISTENER_SHOWS", 800)) return
 

@@ -9,6 +9,7 @@
     import Button from "../inputs/Button.svelte"
     import TopButton from "../inputs/TopButton.svelte"
     import { DEFAULT_DISPLAY_NAME } from "../../utils/SocketHelper"
+    import { usesScrimOnlyRenderer } from "../../../types/Output"
 
     export let isWindows = false
 
@@ -18,7 +19,7 @@
 
     // && !$editHistory.length
     $: editDisabled = $activeEdit.id && ($activeEdit.type || "show") !== "show" ? false : $activeShow && ($activeShow?.type || "show") === "show" ? isLocked : $activeShow?.type === "pdf" || !$activeShow?.id
-    $: physicalOutputWindows = Object.values($outputs).filter((a) => a.enabled && !a.invisible)
+    $: physicalOutputWindows = Object.values($outputs).filter((a) => a.enabled && !a.invisible && !usesScrimOnlyRenderer(a))
 
     let confirm = false
     let disableClick = false
