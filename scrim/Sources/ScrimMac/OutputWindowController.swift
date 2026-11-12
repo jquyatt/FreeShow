@@ -8,10 +8,11 @@ final class OutputWindowController: NSWindowController, NSWindowDelegate {
     private var target: FullscreenDisplayTarget
     private var reconciling = false
     var onDisplayChange: ((String?) -> Void)?
+    var displayIdentity: String? { windowed ? nil : target.identity }
 
-    init(screenIndex: Int?, baseURL: URL, liveSources: LiveSourceManager, windowed: Bool) {
+    init(screenIndex: Int?, displayIdentity: String? = nil, baseURL: URL, liveSources: LiveSourceManager, windowed: Bool) {
         self.windowed = windowed
-        target = FullscreenDisplayTarget(requestedIndex: screenIndex)
+        target = FullscreenDisplayTarget(requestedIndex: screenIndex, identity: displayIdentity)
         outputView = SceneOutputView(frame: .zero, baseURL: baseURL, liveSources: liveSources)
         super.init(window: nil)
     }
@@ -65,12 +66,7 @@ final class OutputWindowController: NSWindowController, NSWindowDelegate {
             return
         }
 
-        let displays = screens.map { screen -> FullscreenDisplayTarget.Display in
-            let id = Self.displayID(screen) ?? 0
-            let identity = id == 0 ? nil : CGDisplayCreateUUIDFromDisplayID(id)?.takeRetainedValue()
-            let key = identity.map { CFUUIDCreateString(nil, $0) as String }
-            return .init(id: id, identity: key, eligible: Self.isEligible(id))
-        }
+        let displays = screens.map(Self.display)
         guard let id = target.resolve(displays), let screen = screens.first(where: { Self.displayID($0) == id }) else {
             suspendFullscreen()
             return
@@ -94,6 +90,24 @@ final class OutputWindowController: NSWindowController, NSWindowDelegate {
     func windowDidChangeScreen(_ notification: Notification) {
         // AppKit can relocate a visible window before the application-level display notification.
         reconcileDisplays()
+    }
+
+    func stop() { suspendFullscreen() }
+
+    static func eligibleDisplays() -> [(identity: String, name: String)] {
+        let screens = NSScreen.screens
+        let displays = screens.map(Self.display)
+        return zip(screens, displays).compactMap { screen, display in
+            guard display.eligible, let identity = display.identity,
+                  displays.filter({ $0.identity == identity }).count == 1 else { return nil }
+            return (identity, screen.localizedName)
+        }
+    }
+
+    private static func display(_ screen: NSScreen) -> FullscreenDisplayTarget.Display {
+        let id = displayID(screen) ?? 0
+        let uuid = id == 0 ? nil : CGDisplayCreateUUIDFromDisplayID(id)?.takeRetainedValue()
+        return .init(id: id, identity: uuid.map { CFUUIDCreateString(nil, $0) as String }, eligible: isEligible(id))
     }
 
     private func suspendFullscreen() {

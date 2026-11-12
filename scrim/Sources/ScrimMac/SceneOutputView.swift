@@ -201,6 +201,13 @@ final class SceneOutputView: NSView, @unchecked Sendable {
 
     required init?(coder: NSCoder) { nil }
 
+    func releaseAllMedia() {
+        setPreviewDemand(.init(enabled: false, maxWidth: 640, framesPerSecond: 12))
+        releaseRetiredCaptures(retaining: [])
+        videoPlaybacks.removeAll()
+        playbackStates.removeAll()
+    }
+
     func setPreviewDemand(_ demand: ScrimPreviewDemand) {
         let normalized = ScrimPreviewDemand(
             enabled: demand.enabled,
@@ -229,19 +236,20 @@ final class SceneOutputView: NSView, @unchecked Sendable {
         needsDisplay = true
     }
 
-    func receive(revision: Int, scene: FlywireScene, assets: [String: CGImage], liveLeaseId: String? = nil) {
+    @discardableResult
+    func receive(revision: Int, scene: FlywireScene, assets: [String: CGImage], liveLeaseId: String? = nil, forceCut: Bool = false) -> Bool {
         guard let mediaImage = renderer.render(scene: scene, assets: assets, includeBackground: true, includeText: false),
               let textImage = renderer.render(scene: scene, includeBackground: false, includeText: true)
         else {
             if let liveLeaseId { liveSources.release(sceneId: liveLeaseId) }
             fputs("[Scrim] decode/preparation failure output=\(scene.outputId) revision=\(revision) scene=\(scene.id): renderer returned no layer image\n", stderr)
-            return
+            return false
         }
         if scene.background.live != nil {
             guard let liveLeaseId, liveSources.frame(sceneId: liveLeaseId) != nil else {
                 if let liveLeaseId { liveSources.release(sceneId: liveLeaseId) }
                 print("[Scrim] preparation failure output=\(scene.outputId) revision=\(revision) action=retain-current reason=missing live first frame")
-                return
+                return false
             }
             if let previous = presentedLiveScenes[scene.id], previous != liveLeaseId { liveSources.release(sceneId: previous) }
             presentedLiveScenes[scene.id] = liveLeaseId
@@ -249,11 +257,11 @@ final class SceneOutputView: NSView, @unchecked Sendable {
         if let video = scene.background.video {
             guard let initialFrame = assets[video.assetId] else {
                 fputs("[Scrim] decode/preparation failure output=\(scene.outputId) revision=\(revision) scene=\(scene.id) asset=\(video.assetId) action=retain-current reason=missing prepared video frame\n", stderr)
-                return
+                return false
             }
             guard let playback = NativeVideoPlayback(asset: video, baseURL: baseURL, initialFrame: initialFrame) else {
                 fputs("[Scrim] decode/preparation failure output=\(scene.outputId) revision=\(revision) scene=\(scene.id) asset=\(video.assetId) action=retain-current reason=invalid video URL \(video.url)\n", stderr)
-                return
+                return false
             }
             videoPlaybacks[scene.id] = playback
             if let state = playbackStates[scene.id], state.assetId == video.assetId {
@@ -261,7 +269,7 @@ final class SceneOutputView: NSView, @unchecked Sendable {
             }
             print("[Scrim] prepared video output=\(scene.outputId) revision=\(revision) asset=\(video.assetId) muted=true loop=\(video.loop ?? true)")
         }
-        compositor.prepare(PreparedScene(scene: scene, mediaImage: mediaImage, textImage: textImage), at: CACurrentMediaTime())
+        compositor.prepare(PreparedScene(scene: scene, mediaImage: mediaImage, textImage: textImage), at: CACurrentMediaTime(), forceCut: forceCut)
         let retainedSceneIds = Set([compositor.outgoing?.scene.id, compositor.incoming?.scene.id].compactMap { $0 })
         videoPlaybacks = videoPlaybacks.filter { retainedSceneIds.contains($0.key) }
         releaseRetiredCaptures(retaining: retainedSceneIds)
@@ -272,6 +280,7 @@ final class SceneOutputView: NSView, @unchecked Sendable {
             let details = scene.unsupported.map(\.reason).joined(separator: " | ")
             fputs("Scrim unsupported content: \(details)\n", stderr)
         }
+        return true
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -383,7 +392,8 @@ final class SceneOutputView: NSView, @unchecked Sendable {
             DispatchQueue.main.async {
                 guard let self else { return }
                 self.previewEncoding = false
-                guard self.previewDemand.enabled, let frame, frame.revision == self.presentedRevision else {
+                guard self.previewDemand.enabled, let frame, frame.revision == self.presentedRevision,
+                      frame.outputId == self.compositor.incoming?.scene.outputId else {
                     self.needsDisplay = true
                     return
                 }

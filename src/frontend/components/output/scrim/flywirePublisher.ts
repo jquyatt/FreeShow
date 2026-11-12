@@ -9,6 +9,7 @@ import { resolveFlywireVideoPlaybackState, type PublishedVideoBinding } from "./
 import { Main } from "../../../../types/IPC/Main"
 import { requestMain } from "../../../IPC/main"
 import { resolveCaptureDisplay } from "./liveSource"
+import { getFlywireOutputCatalog, isPublishedFlywireOutput } from "./flywireOutputCatalog"
 
 // Coalesce synchronous store updates into one resolved scene without delaying
 // the presentation trigger. Text-bearing scenes have their own atomic
@@ -19,6 +20,7 @@ let initialized = false
 let sequence = 0
 let resolutionGeneration = 0
 let publishTimer: ReturnType<typeof setTimeout> | null = null
+let outputCatalog: ReturnType<typeof getFlywireOutputCatalog> = []
 const subscriptions = new Map<string, string>()
 const capabilities = new Map<string, Set<string>>()
 const heldTextLayouts = new Map<string, string>()
@@ -47,10 +49,12 @@ export function initFlywirePublisher() {
         "flywire-text-layout"
     )
     outputs.subscribe((allOutputs) => {
-        const outputIds = Object.entries(allOutputs)
-            .filter(([, output]) => output.scrim && !output.stageOutput)
-            .map(([outputId]) => outputId)
-        console.info(`[Flywire] configured output IDs: ${outputIds.join(", ") || "(none)"}`)
+        const catalog = getFlywireOutputCatalog(allOutputs)
+        if (JSON.stringify(catalog) !== JSON.stringify(outputCatalog)) {
+            outputCatalog = catalog
+            console.info(`[Flywire] configured output IDs: ${catalog.map(({ id }) => id).join(", ") || "(none)"}`)
+            publishOutputCatalog()
+        }
         scheduleFlywireScenes()
     })
     ;[showsCache, styles, templates, media, variables, transitionData].forEach((store: any) => store.subscribe(scheduleFlywireScenes))
@@ -103,9 +107,13 @@ function receiveScrimMessage(msg: Message) {
         return
     }
 
+    if (msg.channel === "LIST_OUTPUTS" && socketId) {
+        publishOutputCatalog(socketId)
+        return
+    }
     if (msg.channel !== "SUBSCRIBE") return
     const outputId = String(msg.data?.outputId || "")
-    if (!get(outputs)[outputId]?.scrim) {
+    if (!isPublishedFlywireOutput(get(outputs)[outputId])) {
         console.error(`[Flywire] subscription rejected socket=${socketId} output=${outputId}: output not available`)
         window.api.send(SCRIM, {
             id: socketId,
@@ -124,6 +132,10 @@ function receiveScrimMessage(msg: Message) {
         return all
     })
     publishOutput(outputId, socketId)
+}
+
+function publishOutputCatalog(socketId?: string) {
+    window.api.send(SCRIM, { id: socketId, channel: "OUTPUT_CATALOG", data: outputCatalog })
 }
 
 function publishOutput(outputId: string, onlySocketId = "") {
@@ -192,7 +204,7 @@ async function publishResolvedOutput(outputId: string, onlySocketId = "") {
         }
         window.api.send(SCRIM, { id: socketId, channel: "SCENE", data: envelope })
     })
-    lastPublishedSceneSignatures.set(outputId, sceneSignature)
+    if (!onlySocketId) lastPublishedSceneSignatures.set(outputId, sceneSignature)
     socketIds.forEach((socketId) => publishVideoPlaybackState(outputId, socketId))
 
     const preloads = resolveAdjacentSceneAssets(outputId)

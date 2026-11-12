@@ -15,9 +15,11 @@ Electron output windows. The prototype supports normal outputs containing a
 solid, image, or native video background plus text. Unsupported active content
 is named in every scene and remains visible on the Electron renderer.
 
-**Tested setup:** one FreeShow output on one Mac, with photo and video slides
-and some text. Multi-output shows and broader text styling are not yet
-validated for live use.
+**Tested setup:** photo and video slides and some text on one Mac. Switching
+between two FreeShow feeds on one HDMI display has passed a hardware smoke
+test. Scrim also presented and switched feeds with HDMI TO USB and BMD HDMI
+assigned in the same session. Two-display disconnect/reconnect and broader
+multi-output use are not yet qualified for live use.
 
 ## Run the vertical slice
 
@@ -66,10 +68,17 @@ running `npm run scrim:package`. The full-color app icon is built from `Assets/S
 monochrome menu bar adaptation is drawn at native display scale.
 
 Opening `Scrim.app` in Finder starts a windowed preview subscribed to the local
-`default` FreeShow output. The feed is chosen at launch: `--output` overrides
-`SCRIM_OUTPUT_ID`, which overrides `default`. The menu bar shows the selected
-feed; there is no live picker yet. For a deliberate HDMI test, quit that
-instance and launch:
+`default` FreeShow output. The initial feed comes from `--output`, then
+`SCRIM_OUTPUT_ID`, then `default`. In the menu bar, choose **Displays**, then
+an external display and a published FreeShow feed. Repeat for another display
+to drive both at once. **Preview Feed** changes only the windowed preview.
+The current feed on a display
+keeps playing until the new scene is ready; Scrim then cuts to it. If the new
+scene fails to arrive within ten seconds, Scrim keeps the current feed. The menu
+requires a FreeShow build that publishes the feed list; older builds still
+support the launch-time output ID.
+
+For a deliberate HDMI test, quit the windowed instance and launch:
 
 ```sh
 open -a /path/to/Scrim.app --args --fullscreen --screen 1 --output default
@@ -78,6 +87,17 @@ open -a /path/to/Scrim.app --args --fullscreen --screen 1 --output default
 Confirm the screen index first. If the target is unplugged, Scrim hides the
 fullscreen window and waits for that same display to return. The `swift run`
 developer launch still defaults to fullscreen on an eligible external display.
+The display list is refreshed each time the menu opens. Unplugging one display
+suspends only that display's assignment; it reappears when the same display
+returns. **Turn Off This Display** removes its assignment for the current
+session. Scrim does not automatically put output on a newly detected display
+unless it is resolving the initial fullscreen launch target.
+
+For an isolated HDMI smoke test without FreeShow, run
+`node scrim/Tools/feed-switch-demo.mjs` and launch the packaged app with the
+printed `--host` value. The demo offers two differently colored feeds (the
+second starts with a delay) and a third feed that deliberately never sends a
+scene, so you can check both the cut and timeout on the capture card.
 
 ### Developer launch
 

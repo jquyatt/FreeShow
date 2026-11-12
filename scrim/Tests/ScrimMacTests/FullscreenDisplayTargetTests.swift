@@ -30,3 +30,15 @@ private let spare = FullscreenDisplayTarget.Display(id: 3, identity: "spare", el
     #expect(target.resolve([nowPrimary, spare]) == nil)
     #expect(target.resolve([operatorScreen, hdmi, returned]) == nil)
 }
+
+@Test func explicitDisplayAssignmentsStayIndependentAcrossHotplug() {
+    var first = FullscreenDisplayTarget(requestedIndex: nil, identity: "hdmi")
+    var second = FullscreenDisplayTarget(requestedIndex: nil, identity: "spare")
+    #expect(first.resolve([operatorScreen, spare]) == nil)
+    #expect(second.resolve([operatorScreen, spare]) == spare.id)
+    let returned = FullscreenDisplayTarget.Display(id: 22, identity: "hdmi", eligible: true)
+    #expect(first.resolve([operatorScreen, spare, returned]) == returned.id)
+    #expect(second.resolve([operatorScreen, spare, returned]) == spare.id)
+    #expect(second.resolve([operatorScreen, returned]) == nil)
+    #expect(first.resolve([operatorScreen, returned]) == returned.id)
+}

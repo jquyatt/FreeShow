@@ -198,6 +198,10 @@ import Testing
     #expect(compositor.outgoing?.scene.id == "comparison:1")
     #expect(compositor.incoming?.scene.id == "comparison:1")
     #expect(abs(compositor.progress(at: 20.25) - 0.5) < 0.0001)
+
+    compositor.prepare(PreparedScene(scene: envelope.scene, image: secondImage), at: 21, forceCut: true)
+    #expect(compositor.outgoing == nil)
+    #expect(compositor.layerProgress(at: 21).isComplete)
 }
 
 @Test func compositorUsesIndependentLayerTimingAndFreeShowEasing() throws {

@@ -7,7 +7,12 @@ struct FullscreenDisplayTarget {
     }
 
     let requestedIndex: Int?
-    private(set) var identity: String? = nil
+    private(set) var identity: String?
+
+    init(requestedIndex: Int?, identity: String? = nil) {
+        self.requestedIndex = requestedIndex
+        self.identity = identity
+    }
 
     mutating func resolve(_ displays: [Display]) -> UInt32? {
         let candidate: Display?

@@ -37,8 +37,8 @@ public final class SceneCompositor: @unchecked Sendable {
 
     public init() {}
 
-    public func prepare(_ scene: PreparedScene, at time: TimeInterval) {
-        outgoing = incoming
+    public func prepare(_ scene: PreparedScene, at time: TimeInterval, forceCut: Bool = false) {
+        outgoing = forceCut ? nil : incoming
         incoming = scene
         transitionStartedAt = time
         if scene.scene.transition.media.type == "cut", scene.scene.transition.text.type == "cut" {

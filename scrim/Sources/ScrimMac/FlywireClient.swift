@@ -9,6 +9,11 @@ private struct FlywireAssetPreloadMessage: Decodable {
     let assets: [FlywireAssetRef]
 }
 
+struct FlywireOutputOption: Decodable, Equatable {
+    let id: String
+    let name: String
+}
+
 private enum FlywireAssetLoadError: Error, CustomStringConvertible {
     case invalidURL(assetId: String, value: String)
     case httpStatus(assetId: String, status: Int)
@@ -31,6 +36,7 @@ final class FlywireClient {
     private static let assetCacheLimit = 8
 
     private let baseURL: URL
+    private let leaseNamespace = UUID().uuidString
     private let outputId: String
     private let liveSources: LiveSourceManager
     private var pendingLiveScenes: Set<String> = []
@@ -40,6 +46,11 @@ final class FlywireClient {
     var onPreviewDemand: ((ScrimPreviewDemand) -> Void)?
     var onPreviewAcknowledgement: ((Int) -> Void)?
     var onPlaybackState: ((FlywireVideoPlaybackState) -> Void)?
+    var onOutputCatalog: (([FlywireOutputOption]) -> Void)?
+    var onSubscriptionError: ((String) -> Void)?
+    var onDisconnect: (() -> Void)?
+    private var previewReady: Bool
+    private let subscribes: Bool
     private var sceneEpoch = 0
     private var latestReceivedSequence = 0
     private var assetCache: [String: CGImage] = [:]
@@ -49,10 +60,12 @@ final class FlywireClient {
     private var videoFirstFrameCacheOrder: [String] = []
     private var videoFirstFrameLoads: [String: Task<CGImage, Error>] = [:]
 
-    init(baseURL: URL, outputId: String, liveSources: LiveSourceManager, onScene: @escaping (Int, FlywireScene, [String: CGImage], String?) -> Void) {
+    init(baseURL: URL, outputId: String, liveSources: LiveSourceManager, previewReady: Bool = true, subscribes: Bool = true, onScene: @escaping (Int, FlywireScene, [String: CGImage], String?) -> Void) {
         self.baseURL = baseURL
         self.outputId = outputId
         self.liveSources = liveSources
+        self.previewReady = previewReady
+        self.subscribes = subscribes
         self.onScene = onScene
         manager = SocketManager(socketURL: baseURL, config: [.compress, .reconnects(true), .log(false)])
         socket = manager.defaultSocket
@@ -60,6 +73,23 @@ final class FlywireClient {
     }
 
     func connect() { socket.connect() }
+
+    func disconnect() {
+        beginSceneEpoch()
+        socket.removeAllHandlers()
+        manager.disconnect()
+    }
+
+    func requestOutputCatalog() {
+        if socket.status == .connected { socket.emit("SCRIM", ["channel": "LIST_OUTPUTS"]) }
+    }
+
+    func enablePreview() {
+        previewReady = true
+        if socket.status == .connected {
+            socket.emit("SCRIM", ["channel": "PREVIEW_READY", "data": ["outputId": outputId]])
+        }
+    }
 
     func sendPreviewFrame(_ frame: ScrimPreviewFrame) {
         guard frame.outputId == outputId else { return }
@@ -82,12 +112,16 @@ final class FlywireClient {
         socket.on(clientEvent: .connect) { [weak self] _, _ in
             guard let self else { return }
             self.beginSceneEpoch()
-            self.socket.emit("SCRIM", ["channel": "SUBSCRIBE", "data": ["outputId": self.outputId, "capabilities": ["screenCapture.v1"]]])
-            self.socket.emit("SCRIM", ["channel": "PREVIEW_READY", "data": ["outputId": self.outputId]])
-            print("[Flywire] connected host=\(self.baseURL.absoluteString) subscription output=\(self.outputId)")
+            if self.subscribes {
+                self.socket.emit("SCRIM", ["channel": "SUBSCRIBE", "data": ["outputId": self.outputId, "capabilities": ["screenCapture.v1"]]])
+                if self.previewReady { self.enablePreview() }
+                print("[Flywire] connected host=\(self.baseURL.absoluteString) subscription output=\(self.outputId)")
+            }
+            self.requestOutputCatalog()
         }
         socket.on(clientEvent: .disconnect) { [weak self] _, _ in
             self?.beginSceneEpoch()
+            self?.onDisconnect?()
         }
         socket.on(clientEvent: .error) { data, _ in
             fputs("Flywire socket error: \(data)\n", stderr)
@@ -101,10 +135,16 @@ final class FlywireClient {
                 let code = details?["code"] as? String ?? "UNKNOWN"
                 let rejectedOutputId = details?["outputId"] as? String ?? self.outputId
                 fputs("[Scrim] subscription rejected output=\(rejectedOutputId) code=\(code)\n", stderr)
+                self.onSubscriptionError?(code)
                 return
             }
             guard let payload = message["data"] else { return }
-            if channel == "SCENE" {
+            if channel == "OUTPUT_CATALOG" {
+                if let data = try? JSONSerialization.data(withJSONObject: payload),
+                   let catalog = try? JSONDecoder().decode([FlywireOutputOption].self, from: data) {
+                    self.onOutputCatalog?(catalog)
+                }
+            } else if channel == "SCENE" {
                 Task { await self.decodeAndPrepare(payload) }
             } else if channel == "PRELOAD_ASSETS" {
                 Task { await self.decodeAndPreload(payload) }
@@ -166,7 +206,7 @@ final class FlywireClient {
             print("[Scrim] received scene output=\(envelope.scene.outputId) revision=\(envelope.sequence) scene=\(envelope.scene.id) wireMs=\(Int(wireMs.rounded())) media=\(mediaTransition.type)/\(Int(mediaTransition.durationMs.rounded()))ms/\(mediaTransition.easing) text=\(textTransition.type)/\(Int(textTransition.durationMs.rounded()))ms/\(textTransition.easing)")
             let assets = try await loadAssets(for: envelope.scene, revision: envelope.sequence)
             guard receivedEpoch == sceneEpoch, envelope.sequence == latestReceivedSequence else { return }
-            let leaseId = "\(receivedEpoch):\(envelope.sequence):\(envelope.scene.id)"
+            let leaseId = "\(leaseNamespace):\(receivedEpoch):\(envelope.sequence):\(envelope.scene.id)"
             if let live = envelope.scene.background.live {
                 // Native desktop identities only address the same machine as FreeShow.
                 guard ["localhost", "127.0.0.1", "::1", "[::1]"].contains(baseURL.host ?? "") else {
