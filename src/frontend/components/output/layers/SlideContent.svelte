@@ -271,9 +271,7 @@
         if (currentTransition?.type === "none") currentTransition.duration = 0
 
         const slideHasAnyTransition = currentSlide.items.some((item: Item) => hasRealTransition(item.actions?.transition, currentTransition))
-        persistentItemIndexes = slideHasAnyTransition
-            ? []
-            : currentSlide.items.flatMap((newItem: Item, index: number) => (JSON.stringify(currentItems[index]) === JSON.stringify(newItem) ? [index] : []))
+        persistentItemIndexes = slideHasAnyTransition ? [] : currentSlide.items.flatMap((newItem: Item, index: number) => (JSON.stringify(currentItems[index]) === JSON.stringify(newItem) ? [index] : []))
 
         let currentTransitionDuration = transitionEnabled ? (itemTransitionDuration ?? currentTransition?.duration ?? 0) : 0
         let waitToShow = currentTransitionDuration * ((currentTransition?.fadeInOffset ?? 50) / 100)

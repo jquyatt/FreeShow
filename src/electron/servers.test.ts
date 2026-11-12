@@ -52,7 +52,9 @@ describe("SCRIM server", () => {
     })
 
     it("listens on loopback only", async () => {
-        const lan = Object.values(networkInterfaces()).flat().find((i) => i && i.family === "IPv4" && !i.internal)
+        const lan = Object.values(networkInterfaces())
+            .flat()
+            .find((i) => i && i.family === "IPv4" && !i.internal)
         if (!lan) return // no LAN interface on this machine
         await expect(get("/", lan.address)).rejects.toThrow()
     })

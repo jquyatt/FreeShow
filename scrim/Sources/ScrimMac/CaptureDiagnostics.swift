@@ -7,7 +7,7 @@ import ScrimCore
 enum CaptureDiagnostics {
     static func run() async -> Int32 {
         guard CGPreflightScreenCaptureAccess() else {
-            print("[Capture check] BLOCKED: Screen Recording permission is not granted to this Scrim executable. Use the Scrim menu's Allow Screen Capture action, then restart.")
+            print("[Capture check] BLOCKED: Screen Recording permission is not granted. For Scrim.app, use the menu's Allow Screen Capture action and restart Scrim. From a terminal, grant it to the terminal app in System Settings → Privacy & Security → Screen Recording, then restart the terminal.")
             return 2
         }
         let fixture = Process()

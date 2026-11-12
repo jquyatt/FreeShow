@@ -283,8 +283,7 @@ const updateList: { [key in SaveListSettings | SaveListSyncedSettings]: any } = 
             const map: { [id: string]: string[] } = {}
             v.forEach((id) => (map[id] = []))
             v = map
-        }
-        else if (!v || typeof v !== "object") {
+        } else if (!v || typeof v !== "object") {
             console.warn("Ignoring invalid lockedOverlays setting; expected an object or legacy array")
             v = {}
         }

@@ -1,3 +1,6 @@
+> [!NOTE]
+> **Scrim fork.** This branch adds Flywire scene publishing and Scrim, an experimental native macOS output. To run them, start with the [Scrim quick start](scrim/README.md).
+
 <p align='center'>
  <a href='https://freeshow.app/'>
   <img src='https://github.com/ChurchApps/FreeShow/assets/17619496/02ac9807-1f47-47fc-b895-b35f857c2b57' width=150 />
@@ -67,7 +70,7 @@ Head over to [FreeShow on Transifex](https://app.transifex.com/nettbiter/freesho
 This fork includes an experimental preview of Flywire scene publishing and
 Scrim, a native macOS output renderer. It is intended for local testing on one
 Mac, not as a supported FreeShow release. See the
-[Scrim quickstart](scrim/README.md) to run both together.
+[Scrim quick start](scrim/README.md) to run both together.
 
 ## Help the development
 

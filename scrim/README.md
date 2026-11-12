@@ -4,227 +4,236 @@
 
 # Scrim / Flywire prototype
 
-**Experimental preview.** Scrim is currently intended for local testing and
-rehearsals on the same Mac as the Flywire-enabled FreeShow build below. Keep
-FreeShow’s Electron output available as a fallback. This is not a supported or
-notarized production release.
+**Experimental preview.** Scrim is for local testing and rehearsals on the same
+Mac as the Flywire-enabled FreeShow build below. Keep FreeShow's Electron output
+available as a fallback. This is not a supported or notarized release.
 
-Scrim is an optional native macOS scene sink. FreeShow continues to own show
-state, templates, dynamic values, output-specific line selection, and its normal
-Electron output windows. The prototype supports normal outputs containing a
-solid, image, or native video background plus text. Unsupported active content
-is named in every scene and remains visible on the Electron renderer.
+Scrim is an optional native macOS output for FreeShow. FreeShow still owns show
+state, templates, dynamic values, line selection and its normal Electron output
+windows. It publishes each resolved output as a full scene over **Flywire**
+(socket.io on `http://127.0.0.1:5514`), and Scrim draws that scene on a display.
 
-**Tested setup:** photo and video slides and some text on one Mac. Switching
-between two FreeShow feeds on one HDMI display has passed a hardware smoke
-test. Scrim also presented and switched feeds with HDMI TO USB and BMD HDMI
-assigned in the same session. Two-display disconnect/reconnect and broader
+The prototype supports normal outputs with a solid, image, video or screen/window
+background plus text. Anything else in a scene is listed as unsupported and stays
+on the Electron renderer.
+
+**Tested so far:** photo and video slides with some text, on one Mac. Switching
+between two FreeShow feeds on one HDMI display passed a hardware smoke test, and
+Scrim presented and switched feeds with the displays `HDMI TO USB` and
+`BMD HDMI` assigned in the same session. Two-display unplug/replug and wider
 multi-output use are not yet qualified for live use.
 
-## Run the vertical slice
+## Quick start
 
-### Start FreeShow with Flywire
+You need two things running on the same Mac:
 
-Scrim is the renderer, not the show controller. Run it alongside the Flywire-enabled
-FreeShow branch (`scrim/1.6.7-port`). The Scrim ZIP does not include FreeShow, and
-a FreeShow build without **Scrim / Flywire** in Settings cannot feed it.
+- **FreeShow from this branch.** The FreeShow app from freeshow.app does not have
+  Flywire and cannot feed Scrim.
+- **Scrim**, either as a packaged `Scrim.app` or run from source.
 
-Use Node.js 22.12 or later and the
-[FreeShow development prerequisites](../README.md#help-the-development).
-Clone the [FreeShow fork](https://github.com/jquyatt/FreeShow) and run:
+### 1. Run FreeShow from this branch
+
+Install Node.js 22.12 or later and the
+[FreeShow development prerequisites](../README.md#help-the-development), then:
 
 ```sh
 git clone --branch scrim/1.6.7-port https://github.com/jquyatt/FreeShow.git FreeShow-Scrim
 cd FreeShow-Scrim
 npm install
-npm start
+FS_MOCK_STORE_PATH=/tmp/freeshow-scrim npm start
 ```
 
-Quit any other FreeShow instance first. This dev launcher uses the normal
-FreeShow user configuration and clears port 3000 before starting Vite.
+Quit any other copy of FreeShow first. `npm start` frees port 3000 for its dev
+server. `FS_MOCK_STORE_PATH` keeps this copy's settings and outputs in a
+throwaway folder; leave it off to test with your own setup. Show files still go
+to `~/Documents/FreeShow` either way.
 
-1. Open **Settings → Connections** and enable **Scrim / Flywire**. The local
-   endpoint is `http://127.0.0.1:5514` by default.
-2. Open **Settings → Outputs**, select the output you want to test, and enable
-   **Publish this output over Flywire**. Leave **Use Scrim instead of the
-   Electron output window** off for the first test so Electron remains available
-   as a fallback.
-3. Start Scrim using one of the options below. Turn on **Present** and take a
-   slide in FreeShow. Scrim subscribes to the `default` output unless you pass
-   another output ID with `--output`.
+In FreeShow:
 
-### Local macOS package
+1. **Settings → Connections:** enable **Scrim / Flywire**.
+2. **Settings → Outputs:** pick an output and enable **Publish this output over
+   Flywire**. Leave **Use Scrim instead of the Electron output window** off for
+   now, so Electron stays as the fallback.
+3. Turn on **Present** and show a slide.
 
-Run `npm run scrim:package` from the repository root. It builds the native
-release executable and writes `Scrim.app` and a ZIP to a new directory under
-`dist/`. The result is ad-hoc signed for local testing, not notarized or ready
-for external distribution. It does not include FreeShow: start a compatible
-Flywire-enabled FreeShow build first.
+### 2. Run Scrim
 
-The curtain icon in the macOS menu bar opens **About Scrim**, which shows the
-version, build, credits, and a link to the FreeShow fork on GitHub. To link to
-another fork, set `SCRIM_REPOSITORY_URL` to its HTTPS GitHub repository URL when
-running `npm run scrim:package`. The full-color app icon is built from `Assets/ScrimIcon.svg`; the
-monochrome menu bar adaptation is drawn at native display scale.
+You need Xcode 16 or later (Swift 6) for either option. The easiest is the
+packaged app:
 
-Opening `Scrim.app` in Finder starts a windowed preview subscribed to the local
-`default` FreeShow output. The initial feed comes from `--output`, then
-`SCRIM_OUTPUT_ID`, then `default`. In the menu bar, choose **Displays**, then
-an external display and a published FreeShow feed. Repeat for another display
-to drive both at once. **Preview Feed** changes only the windowed preview.
-The current feed on a display
-keeps playing until the new scene is ready; Scrim then cuts to it. If the new
-scene fails to arrive within ten seconds, Scrim keeps the current feed. The menu
-requires a FreeShow build that publishes the feed list; older builds still
-support the launch-time output ID.
+```sh
+npm run scrim:package
+```
 
-For a deliberate HDMI test, quit the windowed instance and launch:
+This writes `Scrim.app` and a ZIP to a new folder under `dist/`. Open
+`Scrim.app` and a preview window appears showing the `default` output. To drive
+an external display, use the Scrim icon in the menu bar: **Displays →** pick a
+display → pick a feed.
+
+The app is ad-hoc signed for local testing only. It doesn't include FreeShow.
+
+To run from source instead, from the repository root:
+
+```sh
+npm run scrim:windowed    # 16:9 window, no second display needed
+npm run scrim             # fullscreen on an external display
+```
+
+The first run builds Scrim with Swift Package Manager and downloads its
+dependencies, so it takes a minute.
+
+## Using Scrim
+
+### Feeds and displays
+
+A feed is a FreeShow output ID, such as `default`, not a macOS display number.
+FreeShow logs the IDs it publishes as `[Flywire] configured output IDs`. Scrim
+picks its first feed from `--output`, then the `SCRIM_OUTPUT_ID` environment
+variable, then `default`.
+
+From the menu bar icon:
+
+- **Displays** assigns a feed to each external display. Repeat for a second
+  display to drive both at once. The list refreshes each time the menu opens.
+- **Preview Feed** changes only the windowed preview.
+- **Turn Off This Display** removes that display's assignment for this session.
+- **About Scrim** shows the version, credits and a link to the fork.
+
+When you switch feeds, the current one keeps playing until the new scene is
+ready, then Scrim cuts to it. If the new scene doesn't arrive within ten seconds,
+Scrim stays on the current feed. The feed menu needs a FreeShow build that
+publishes its feed list; older builds only support the launch-time `--output`.
+
+Unplugging a display suspends only its assignment, which comes back when the
+same display returns. Scrim never puts output on a newly connected display by
+itself, except to resolve the initial fullscreen launch target.
+
+Scrim launches without taking focus. Quit from the menu bar icon, or with
+Control-C if you started it from a terminal.
+
+### Launch options
+
+| Option | Effect |
+| --- | --- |
+| `--output ID` | Initial feed |
+| `--windowed` | 16:9 resizable window (default for `Scrim.app`) |
+| `--fullscreen` | Fullscreen (default for `swift run`) |
+| `--screen N` | Initial macOS display index |
+| `--host URL` | Flywire endpoint. FreeShow listens on loopback only, so this is for local test servers |
+
+Without `--screen`, fullscreen uses the first active, non-mirrored external
+display that isn't the main display. It never falls back to the main display; use
+`--windowed` for that.
+
+For a deliberate HDMI test, confirm the screen index, quit any windowed copy and
+run:
 
 ```sh
 open -a /path/to/Scrim.app --args --fullscreen --screen 1 --output default
 ```
 
-Confirm the screen index first. If the target is unplugged, Scrim hides the
-fullscreen window and waits for that same display to return. The `swift run`
-developer launch still defaults to fullscreen on an eligible external display.
-The display list is refreshed each time the menu opens. Unplugging one display
-suspends only that display's assignment; it reappears when the same display
-returns. **Turn Off This Display** removes its assignment for the current
-session. Scrim does not automatically put output on a newly detected display
-unless it is resolving the initial fullscreen launch target.
+If that display is unplugged, Scrim hides the window and waits for the same
+display to return.
 
-For an isolated HDMI smoke test without FreeShow, run
-`node scrim/Tools/feed-switch-demo.mjs` and launch the packaged app with the
-printed `--host` value. The demo offers two differently colored feeds (the
-second starts with a delay) and a third feed that deliberately never sends a
-scene, so you can check both the cut and timeout on the capture card.
+With `swift run`, pass options after `--`, for example
+`npm run scrim:windowed -- --output sanctuary`.
 
-### Developer launch
+### Output modes
 
-1. Enable Flywire and output publishing as described above. Once the feed works,
-   you can enable **Use Scrim instead of the Electron output window**. This
-   suppresses that output's physical Electron window while retaining a hidden
-   text-only Chromium measurement host in the operator renderer.
-2. Find the logical FreeShow output ID in the saved output configuration or the
-   `[Flywire] configured output IDs` console message. From the repository root,
-   start a fullscreen Scrim output (the usual ID is `default`):
+Each output has two toggles under **Settings → Outputs → Scrim (prototype)**:
 
-   ```sh
-   npm run scrim -- --output default
-   ```
+| Mode | Publish over Flywire | Use Scrim instead of the Electron output window |
+| --- | --- | --- |
+| Electron only (default) | off | off |
+| Dual render | on | off |
+| Scrim only | on | on |
 
-   `--output` is a FreeShow output key, not a macOS display number.
-   `--host` overrides the local endpoint; this FreeShow branch listens only on
-   loopback. `--screen N` selects an initial macOS display index, independently
-   of the FreeShow feed. Without `--screen`, Scrim chooses the
-   first active, non-mirrored external display that is not the main display.
-   Fullscreen never falls back to the main display; use `--windowed` for that.
+Scrim only closes that output's physical Electron window. FreeShow's main
+process stays, along with a hidden text-only Chromium host that measures
+typography and line breaks. Scrim's video is always muted, so use dual render
+whenever the Electron window is your program-audio source.
 
-Scrim does not activate or take keyboard focus when it launches. Quit it from
-the Scrim icon in the macOS menu bar, or press Control-C in the terminal that
-launched it.
-
-When no secondary display is connected, add `--windowed` to create a normal,
-resizable and closable 16:9 test window without changing the renderer or
-Flywire scene path:
+## Testing
 
 ```sh
-npm run scrim:windowed -- --output default
+swift test --package-path scrim   # Swift tests
+npm run test:unit                 # TypeScript unit tests
+npm run scrim:capture-check       # capture permission + disposable window/display probe
+npm run scrim:capture-test        # end-to-end Flywire/preview probe with temporary windows
+node scrim/Tools/feed-switch-demo.mjs
 ```
 
-The first run builds Scrim with Swift Package Manager, so it may take longer
-while Swift downloads dependencies. Subsequent runs reuse the local build.
-For a different output or FreeShow host, add options after `--`, for example
-`npm run scrim:windowed -- --output sanctuary --host http://127.0.0.1:5514`.
+The capture commands need Screen Recording permission and don't touch your show.
+macOS grants it to whatever launched Scrim. For `Scrim.app`, use **Allow Screen
+Capture…** in its menu and restart Scrim. From a terminal, grant it to the
+terminal app (Terminal, iTerm, your editor) in **System Settings → Privacy &
+Security → Screen Recording**, then restart the terminal. Screen/window
+backgrounds need the same permission.
 
-To check macOS capture permission and exercise a disposable window/display:
+`feed-switch-demo.mjs` is an HDMI smoke test without FreeShow. Launch Scrim with
+the `--host` it prints. It offers two differently colored feeds (the second
+starts late) and a third that never sends a scene, so you can check both the cut
+and the ten-second timeout on a capture card.
 
-```sh
-npm run scrim:capture-check
-```
+To point **About Scrim** at another fork, set `SCRIM_REPOSITORY_URL` to its HTTPS
+GitHub URL when running `npm run scrim:package`.
 
-To run the end-to-end Flywire/preview check with temporary windows:
+## How it renders
 
-```sh
-npm run scrim:capture-test
-```
+**Output.** The window is borderless, fills the selected display in pixels,
+never activates, and draws on `CVDisplayLink`.
 
-The check requires Screen Recording permission and does not change the FreeShow
-show. Scrim offers **Allow Screen Capture…** from its menu-bar icon if permission
-needs to be granted; restart Scrim after granting it.
+**Transitions.** Each take arrives as a media layer and a complete text layer.
+The compositor keeps the previous layers and applies FreeShow's media and text
+transitions independently. Only **None** (a true hard cut) and **Fade** are
+supported, with the authored duration and easing. Other effects are reported and
+shown as hard cuts rather than approximated. Identical text across a take stays
+put with no dip.
 
-The output window is borderless, fills the selected display in pixels, does not
-activate, and requests frames from `CVDisplayLink`. Each Flywire take is prepared
-as a media layer and a complete text layer. The compositor retains the prior
-layers and independently applies FreeShow's resolved media and text transition
-settings. This release contract supports only **None** (a true hard cut) and
-**Fade**, including the authored duration and easing. Other transition effects
-are reported and presented as hard cuts instead of being visually approximated.
-Text items still move as one prepared text layer; identical text is retained
-without a fade/dip. Scrim keeps bounded decoded image and video-first-frame
-caches. FreeShow publishes neighboring media up to three slides ahead and one
-slide behind; Scrim prepares those assets concurrently without starting video
-playback.
-Background video is fetched through the same opaque asset URL, decoded by
-AVFoundation, aspect-fitted within the canvas, always muted, and honors Flywire's
-authoritative playback state: playhead, pause, rate, loop, and the resolved
-**Clear media when finished** preference. A non-looping video either clears or
-holds its cached final frame accordingly. FreeShow remains the only program-audio
-authority. Live video participates in the media transition below the independently
-transitioned text layer.
+**Prewarming.** FreeShow publishes media up to three slides ahead and one behind.
+Scrim decodes those images and video first frames concurrently, into bounded
+caches, without starting playback.
 
-Display and window backgrounds selected from FreeShow's Screen source use
-native ScreenCaptureKit capture. Flywire carries a source identity rather than
-pixel frames, and the same native capture stream feeds Scrim's output and its
-operator preview. Captures wait for a first complete frame before a revision is
-presented, share streams across retained transition scenes, and hold their last
-frame if the source closes. Scrim-only mode requires Screen Recording
-permission for the Scrim executable. See
-`docs/scrim/FLYWIRE_LIVE_SOURCE_CONTRACT.md` for the protocol, lifecycle, and
-disposable live-capture probes.
+**Video.** Background video uses the same opaque asset URL, decodes with
+AVFoundation, is aspect-fitted to the canvas and always muted. It follows
+FreeShow's playback state: playhead, pause, rate, loop and **Clear media when
+finished**. A non-looping video either clears or holds its last frame. FreeShow
+remains the only source of program audio.
 
-Media preparation is fail-closed. A scene containing an image is not eligible
-for presentation until that image has decoded, and a video scene is not eligible
-until AVFoundation has opened its video track and decoded a display-oriented
-first frame. A missing, unreadable, or unsupported asset therefore leaves the
-last valid scene on program and emits an error with the output, revision, asset,
-and reason. Media outside the neighbor window uses the same validation gate on
-demand, so an uncached take remains safe even when it is not prewarmed.
+**Screen and window capture.** Backgrounds chosen from FreeShow's Screen source
+use ScreenCaptureKit. Flywire carries the source identity, never pixels, and one
+capture stream feeds both program and operator preview. A capture waits for its
+first complete frame before presenting and holds its last frame if the source
+closes. See `docs/scrim/FLYWIRE_LIVE_SOURCE_CONTRACT.md`.
 
-When an output has Scrim enabled, its operator preview uses reduced-resolution
-frames returned by the native compositor instead of mounting a second Chromium
-`Output` scene. Static scenes return one frame per presented revision; video and
-active transitions are capped at 15 fps. The acknowledgement-gated transport is
-strictly lossy and cannot block program presentation. See
+**Fail-closed media.** A scene with an image isn't presented until the image
+decodes; a video scene waits until AVFoundation opens the track and decodes a
+first frame. A missing or unreadable asset leaves the last valid scene on screen
+and logs the output, revision, asset and reason. Media outside the prewarm window
+goes through the same check on demand.
+
+**Operator preview.** For Scrim outputs, FreeShow's preview shows reduced-size
+frames sent back by Scrim instead of a second Chromium scene. Still scenes send
+one frame per revision; video and transitions are capped at 15 fps. The
+transport is lossy and can never block program output. See
 `docs/scrim/SCRIM_NATIVE_PREVIEW_CONTRACT.md`.
 
-Scrim-only mode does not remove FreeShow's main Electron process. It removes the
-separate physical audience renderer for that output; the lightweight hidden host
-still resolves inherited typography and Chromium-authored visual line breaks.
-Because Scrim's AVPlayer is permanently muted, use dual-render mode whenever the
-Electron output window is required as the program-audio source.
+## Text fidelity
 
-## Text fidelity experiment
+FreeShow publishes Chromium's final autosized font size and its UTF-16
+visual-line ranges. Scrim shapes those exact lines with CoreText and never wraps
+text itself. The renderer has no font-size fudge factor and no copy of CSS
+balanced wrapping. Two translation bugs were found and fixed along the way: a
+zero kern value disabled font kerning, and CSS line height mapped to the wrong
+CoreText property. The representative forced-break matrix now matches with
+subpixel differences. See `docs/scrim/FLYWIRE_TEXT_LAYOUT_CONTRACT.md`.
 
-`Fixtures/autosize-comparison.show` is a valid FreeShow show with a real
-shrink-to-fit slide. Import it, display it at 1920×1080 in Chromium and Scrim,
-and compare:
+To compare by eye, import `Fixtures/autosize-comparison.show` (a real
+shrink-to-fit slide), show it at 1920×1080 in both renderers, and compare font
+size, line breaks, height and baseline. The matching scene fixture is covered by
+`swift test`.
 
-- the `chromiumFontSize` published in Flywire against CoreText's font size;
-- line count and break positions;
-- rendered bounding height and baseline placement.
-
-The matching Flywire fixture is covered by `swift test`. Forensic instrumentation
-found and fixed two native translation defects (zero kern disabled font kerning,
-and CSS line height used the wrong CoreText property). Font faces and unwrapped
-widths match closely. FreeShow now publishes the final Chromium UTF-16 visual-line
-ranges after autosize and balanced wrapping; Scrim shapes those attributed
-substrings with CoreText and does not independently wrap them. The representative
-forced-break matrix passes with subpixel geometry deltas. See
-`docs/scrim/FLYWIRE_TEXT_LAYOUT_CONTRACT.md`. The renderer contains no font-size
-fudge or balanced-wrap emulation.
-
-To regenerate the detailed artifacts after installing FreeShow's dependencies:
+To regenerate the measurement artifacts after `npm install`:
 
 ```sh
 node scrim/Tools/chromium-fidelity.mjs
@@ -237,29 +246,33 @@ SCRIM_FORCED_FIDELITY_OUTPUT="$PWD/Artifacts/forced-break-coretext.json" swift t
 ## Protocol decisions
 
 - Flywire v1 sends full scenes, not diffs.
-- Scene coordinates are target pixels with a top-left origin.
-- Text is literal and carries structured runs plus Chromium's cached autosize
-  result and UTF-16 visual-line ranges when available. Ranges preserve run
-  identity; CoreText still owns shaping.
-- Scene media identity is an opaque `assetId`. Local paths are registered only
-  inside Electron and exposed to Scrim as `/assets/{assetId}`. Background media
-  declares whether the asset is an image or video. A separate `PLAYBACK` message
-  carries the authoritative FreeShow audio clock, loop intent, playback rate,
-  and resolved clear-on-end policy without exposing a local path.
-- Consumers must prepare all required scene media before presenting a revision.
-  Preparation failure rejects that revision; it must not degrade to an empty or
+- Coordinates are target pixels with a top-left origin.
+- Text is literal, with structured runs, Chromium's autosize result and its
+  visual-line ranges when available. CoreText still does the shaping.
+- Media is referenced by an opaque `assetId`. Electron registers local paths and
+  serves them only as `/assets/{assetId}`. Background media declares whether it
+  is an image or video. A separate `PLAYBACK` message carries FreeShow's audio
+  clock, loop, rate and clear-on-end policy.
+- A consumer must prepare every asset before presenting a revision. If
+  preparation fails, it rejects that revision rather than showing an empty or
   background-only scene.
-- Every scene carries independently resolved media and text transitions. The
-  native contract accepts `cut` or `fade`, duration in milliseconds, and one of
-  FreeShow's named easing curves (`linear`, `back`, `sine`, `circ`, `cubic`,
-  `elastic`, or `bounce`).
-- The Swift `ScrimCore` target has no AppKit window or Socket.IO dependency, so
-  its scene/compositor code can be adapted for iOS/iPadOS later.
+- Every scene carries independent media and text transitions: `cut` or `fade`,
+  a duration in milliseconds, and one of FreeShow's easings (`linear`, `back`,
+  `sine`, `circ`, `cubic`, `elastic`, `bounce`).
+- `ScrimCore` has no AppKit or Socket.IO dependency, so the scene and compositor
+  code can move to iOS/iPadOS later.
 
-Video items, stage outputs, overlays, effects, NDI and other network live inputs,
-PDF/PPT, cameras, web, drawings, and a polished operator UI are outside this
-slice. This slice supports screen/window backgrounds and synchronized
-background-video playback with operator scrubbing.
+## Out of scope
 
-The finish line for a supervised media-first show trial is documented in
-`docs/scrim/GIG_READINESS_GATE.md`.
+Video items, stage outputs, overlays, effects, NDI and other network inputs,
+PDF/PPT, cameras, web content, drawings and a polished operator UI.
+
+## Further reading
+
+| Document | What it covers |
+| --- | --- |
+| `docs/scrim/GIG_READINESS_GATE.md` | What must pass before a supervised live show, and current status |
+| `docs/scrim/FLYWIRE_TEXT_LAYOUT_CONTRACT.md` | Text layout wire format |
+| `docs/scrim/FLYWIRE_LIVE_SOURCE_CONTRACT.md` | Screen/window capture wire format |
+| `docs/scrim/SCRIM_NATIVE_PREVIEW_CONTRACT.md` | Operator preview transport |
+| `docs/scrim/PERFORMANCE_RESULTS_2026-08-24.md` | Electron vs dual vs Scrim-only measurements |
