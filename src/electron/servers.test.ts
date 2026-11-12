@@ -1,10 +1,12 @@
-import { mkdtempSync, writeFileSync } from "fs"
+import { existsSync, mkdtempSync, writeFileSync } from "fs"
 import { networkInterfaces, tmpdir } from "os"
 import { join } from "path"
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest"
 
 const ipcHandlers: Record<string, (e: unknown, msg: unknown) => void> = {}
 vi.mock("electron", () => ({ ipcMain: { on: (id: string, fn: (e: unknown, msg: unknown) => void) => (ipcHandlers[id] = fn) } }))
+vi.mock("./audio/nowPlaying", () => ({ getNowPlayingMediaPath: vi.fn() }))
+vi.mock("./utils/files", () => ({ doesPathExist: existsSync }))
 vi.mock("./capture/CaptureHelper", () => ({ CaptureHelper: {} }))
 vi.mock("./data/bonjour", () => ({ publishPort: vi.fn(), unpublishPorts: vi.fn() }))
 vi.mock("./index", () => ({ toApp: vi.fn() }))
